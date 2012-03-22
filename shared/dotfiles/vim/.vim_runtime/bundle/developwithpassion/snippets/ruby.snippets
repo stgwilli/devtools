@@ -1,0 +1,32 @@
+# #!/usr/bin/env ruby
+snippet tok
+	#{${1}}
+
+#rspec fixture
+snippet desc
+	describe ${1},"${2}" do
+		context "${3}" do
+			it "${4}" do
+				${5}
+			end
+		end
+	end
+
+snippet context
+	context "${1}" do
+		it "${2}" do
+			${3}
+		end
+	end
+
+#rspec observation
+snippet it
+	it "${1}" do
+		${2}	
+	end
+
+#rspec setup
+snippet bddc
+	before (:each) do
+		${1}
+	end
