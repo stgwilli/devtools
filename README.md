@@ -23,21 +23,21 @@ Anything that pertains to a windows build here is making setup assumptions based
 * Navigate to the folder you created above and make a clone of the repository (keep the devtools name). Feel free to fork the repository before you make a clone if you would like to send me pull requests.
 * Navigate into the cloned folder in a shell prompt (on windows use the MingW shell)
 * On windows issue the following command
-    ```bash
-      cp windows/mingw/*.* /c/utils/mingw/msys/1.0/etc/
+    ```
+    cp windows/mingw/*.* /c/utils/mingw/msys/1.0/etc/
     ```
 * Exit your shell session
 * Start a new shell session and navigate to your devtools folder
 * Copy the settings_template file to a file named [your_login_user_name].settings
 * Change the settings in the [your_login_user_name].settings file as needed
 * Run
-  ```bash
+  ```
   ./kick_off
   ```
 * Exit your shell session
 * Start a new shell session and type devtools (this is an alias that should now be active)
 * Run the script:
-  ```bash
+  ```
   update_vim_plugins
   ```
 
