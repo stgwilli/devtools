@@ -1,0 +1,20 @@
+expand do
+  configatron.configure_from_hash :core =>{
+      :launcher => '',
+      :vim => 'mvim',
+      :editor => 'mvim -v -f -c "au VimLeave * !open -a Terminal"',
+      :is_windows => false,
+      :is_cygwin => false,
+      :is_mingw => false,
+      :is_osx => true,
+      :vi => "'mvim -v'",
+    },
+    :git => {
+      :autocrlf => 'input',
+      :merge_tool => 'vimdiff',
+      :diff_tool => 'vimdiff',
+    },
+    :vim => {
+      :environment => 'mac'
+    }
+end

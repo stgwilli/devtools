@@ -1,0 +1,20 @@
+expand do
+  configatron.configure_from_hash :core =>{
+      :launcher => '',
+      :vim => '',
+      :editor => 'vi',
+      :is_windows => true,
+      :is_cygwin => false,
+      :is_mingw => true,
+      :is_osx => false,
+      :vi => "'start C:/utils/vim/vim73/gvim.exe'"
+    },
+    :git => {
+      :autocrlf => 'true',
+      :merge_tool => 'bc3',
+      :diff_tool => 'bc3',
+    },
+    :vim => {
+      :environment => 'windows'
+    }
+end

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+. ~/.bash_source_rvm
+cd ~/repositories/developwithpassion/devtools
+dwp_expand
+ahk_start

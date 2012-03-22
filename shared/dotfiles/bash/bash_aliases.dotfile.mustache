@@ -1,0 +1,106 @@
+#this is a comment
+#command aliases
+alias vi={{ core.vi }}
+alias vim={{ core.vim }}
+
+{{# core.is_osx }}
+alias bctags=/usr/local/Cellar/ctags/5.8/bin/ctags
+alias rspecs='rspec spec/**/*.rb'
+alias k2='open ~/repositories/github/keymando/build/Release/Keymando.app'
+alias rk2='cd ~/repositories/github/keymando;killall Keymando;rake run'
+{{/core.is_osx }}
+
+{{# core.is_windows }}
+alias eahk='vi {{{core.devtools_root}}}/windows/autohotkey'
+{{/core.is_windows }}
+
+{{# core.is_cygwin }}
+alias cyg-wrapper=/cygdrive/{{{core.devtools_root}}}/automation/cygwin/cyg-wrapper.sh
+
+alias sln='cyg-wrapper /c/utils/vs2010/Common7/IDE/devenv.exe *.sln --cyg-env-convert=APPDATA,LOCALAPPDATA,ProgramData,ALLUSERSPROFILE,WINDIR --fork=1'
+
+alias prompt='cyg-wrapper cmd.exe --cyg-env-convert=APPDATA,LOCALAPPDATA,ProgramData,ALLUSERSPROFILE,WINDIR --fork=2'
+
+alias psh='cyg-wrapper powershell --cyg-env-convert=APPDATA,LOCALAPPDATA,ProgramData,ALLUSERSPROFILE,WINDIR --fork=2'
+{{/core.is_cygwin }}
+
+{{# core.is_mingw }}
+alias shell='start {{{my.windows.paths.unix_style.mingw_path}}}/msys/1.0/msys.bat'
+alias psh='start powershell'
+{{/core.is_mingw }}
+
+alias ..='cd ..'
+alias rm='rm -fr $*'
+alias qtar='tar -xzvf $*'
+
+#editing command aliases
+alias change_hosts='devtools;vi shared/hosts/hosts.erb'
+
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+
+    {{#  core.is_windows }}
+    alias ls='ls --color=auto'
+    {{/core.is_windows }}
+    {{^core.is_windows}}
+    alias ls='gls --color=auto'
+    {{/core.is_windows }}
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# utility functions
+
+{{# core.is_osx }}
+function attach()
+{
+  hdiutil attach $1 -mountpoint /tempfiles/downloads/blah
+  cd /tempfiles/downloads/blah
+}
+
+function detach()
+{
+  hdiutil detach /tempfiles/downloads/blah
+}
+{{/core.is_osx }}
+#function that will both create and switch to the directory specified
+function take()
+{
+   mkdir $1
+   cd $1
+}
+
+function dwp_git_clone()
+{
+  git clone git@developwithpassion.repo:$1 $2
+}
+
+function github_git_clone()
+{
+  git clone git@github.com:{{my.github.user}}/$1 $2
+}
+
+function slice_git_clone()
+{
+  git clone git@slicehost:$1 $2
+}
+
+
+#directory aliases
+{{# core.is_windows }}
+alias dwp='cd ~/repositories/github/dwp'
+alias prep='cd ~/repositories/github/dwp/prep'
+alias app='cd ~/repositories/github/dwp/app'
+{{/core.is_windows }}
+alias daxko='cd ~/repositories/daxko'
+alias developwithpassion='cd ~/repositories/developwithpassion'
+alias github='cd ~/repositories/github'
+alias devtools='cd {{{core.devtools_root}}}'
+alias blog='cd ~/repositories/developwithpassion/blog.developwithpassion.com'
+alias opsapi='cd ~/repositories/daxko/operations_api'

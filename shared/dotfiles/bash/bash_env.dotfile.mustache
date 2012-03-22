@@ -1,0 +1,17 @@
+export VIM_APP_DIR=/usr/local/bin/MacVim-7_2-stable-1_2
+export PATH="/usr/local/sbin:/usr/local/mysql/bin:$(find {{{my.unix_style_devtools_root}}}/automation/ -name '.*' -prune -o -type d | tr "\n" ":"):$PATH"
+{{# core.is_windows }}
+export PATH="{{{my.windows.paths.unix_style.vim}}}:$PATH"
+{{/core.is_windows }}
+export EDITOR='{{{core.editor}}}'
+
+#used to show changes in the prompt for a git folder
+export GIT_PS1_SHOWDIRTYSTATE=1
+
+# Unbreak broken, non-colored terminal
+export TERM='xterm-color'
+export GREP_OPTIONS="--color"
+
+{{# core.is_cygwin }}
+export WINDIR='/cygdrive/c/windows'
+{{/core.is_cygwin }}

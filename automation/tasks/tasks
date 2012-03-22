@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'date'
+
+system("mvim","/dropbox/tasks/#{Date.today.year}")
+

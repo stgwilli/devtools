@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+def launch(solution)
+ `start "c:\\Program Files (x86)\\Microsoft Visual Studio\\10.0\\Common7\\IDE\\devenv.exe" #{solution}`
+end
+
+solutions = Dir.glob("**/*.sln")
+
+if (solutions.count == 1) 
+  launch(solutions[0])
+  exit
+end
+
+solutions.each_with_index do |solution,index|
+  puts "#{index+1} - #{File.basename(solution)} - (#{solution})"
+end
+puts "\r\nPick a solution"
+
+index = readline.chomp
+launch(solutions[index.to_i - 1]) if index
+
+
+
+
+
