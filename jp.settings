@@ -39,8 +39,10 @@ expand do
 end
 
 if configatron.core.is_osx
-  specific_folders = [configatron.core.home,%w[repositories developwithpassion mac_library_preferences]].as_glob_pattern
-  copy_to configatron.core.home do
-    all_folders_in specific_folders
+  expand do
+    specific_folders = [configatron.core.home,%w[repositories developwithpassion mac_library_preferences]].as_glob_pattern
+    copy_to configatron.core.home do
+      all_folders_in specific_folders
+    end
   end
 end
