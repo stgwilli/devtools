@@ -66,3 +66,5 @@ I plan to write about these things in the next little while (and/or) just do a w
 ##Contributing
 
 As always, feel free to fork and make modifications to the scripts etc. If you add something you find useful, please feel free to send me a pull request.
+
+[Develop With Passion®](http://www.developwithpassion.com)
