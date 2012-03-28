@@ -7,7 +7,7 @@ The repository consists of mainly the following:
 * A set of automation scripts that can be modified and added to as needed.
 * A set of dotfiles that work on both osx and windows (running mingw)
 * Templates for the files that need to run cross platform
-* A small set of expansion scripts run using [developwithpassion_expander](http://github.com/developwithpassion/developwithpassion_expander).
+* A small set of expansion scripts run using [expansions](http://github.com/developwithpassion/expansions).
 
 ##Cautionary Note
 
