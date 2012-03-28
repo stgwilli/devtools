@@ -14,11 +14,12 @@ expand do
     }
   }
   configatron.configure_from_hash configs
-  load "#{File.basename(`whoami`.chomp)}.settings"
-
   platform_config_file = "expansions/config_#{platform}"
   log "Loading config file #{platform_config_file}"
   load "#{platform_config_file}"
+
+  load "#{File.basename(`whoami`.chomp)}.settings"
+
   look_for_templates_in "**/*.{erb,mustache}"
 
   glob("expansions/**/task*.rb"){|file| load file}
