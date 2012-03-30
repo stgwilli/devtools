@@ -11,6 +11,7 @@ require 'open-uri'
  :timcharper => %w[textile.vim],
  :ervandew => %w[supertab],
  :tomtom => %w[tcomment_vim],
+ :kien => %w[ctrlp.vim],
  "vim-ruby" => %w[vim-ruby],
  :developwithpassion => %w[twitvim],
  :kchmck => %w[vim-coffee-script],
@@ -25,7 +26,7 @@ require 'open-uri'
 ]
 
 <% if not configatron.core.is_cygwin %>
-  @bundles[:wincent] =  %w[Command-T]
+#  @bundles[:wincent] =  %w[Command-T]
 <% end %>
 
 @git_bundles = []
@@ -43,12 +44,6 @@ end
 ]
 
 @cxtensions = [
-  Proc.new{
-  Dir.chdir(File.join(%w[Command-T ruby command-t])) do
-  `ruby extconf.rb`
-  `make`
-  end
-}
 ]
 
 @bundles_to_ignore = %w[developwithpassion]
