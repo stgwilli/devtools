@@ -36,7 +36,8 @@ expand do
     File.open(launch_file,'w') do|file|
      file << "#!/bin/bash\n"
       glob(%w[windows autohotkey ahk*.ahk].as_glob_pattern) do|ahk_script|
-        file << "start #{File.expand_path(ahk_script)}\n"
+        start_command = configatron.core.is_cygwin ? 'open' : 'start'
+        file << "#{start_command} #{File.expand_path(ahk_script)}\n"
       end
     end
   end
