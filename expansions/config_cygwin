@@ -1,6 +1,6 @@
 expand do
   configatron.configure_from_hash :core =>{
-      :launcher => '',
+      :launcher => 'cygstart',
       :vim => 'gvim',
       :editor => 'gvim',
       :is_windows => true,
