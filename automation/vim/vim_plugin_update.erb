@@ -94,7 +94,7 @@ def download_and_unpack_zips
     FileUtils.mkdir_p(name)
     Dir.chdir(name) do
       `#{create_unzip_command_for(script_id)}`
-      <% if configatron.core.is_mingw %>
+      <% if configatron.core.is_windows %>
         `unzip blah.zip` 
         `rm blah.zip`
       <% end %>
