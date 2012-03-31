@@ -9,9 +9,9 @@
 . ~/.bash_git
 . ~/.bash_git_completion
 
-{{# core.is_osx }}
+{{^ core.is_mingw }}
 . ~/.bash_source_rvm
-{{/core.is_osx}}
+{{/core.is_mingw}}
 
 {{# core.is_windows }}
 . ~/.bash_ssh
