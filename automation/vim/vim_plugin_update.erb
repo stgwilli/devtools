@@ -82,7 +82,7 @@ end
 
 def create_unzip_command_for(script_id)
   command = "curl #{build_vim_org_script_link(script_id)}"
-<% if configatron.core.is_mingw %>
+<% if configatron.core.is_windows %>
   command += " > blah.zip" 
 <% else %>
   command+= " | tar xv"
