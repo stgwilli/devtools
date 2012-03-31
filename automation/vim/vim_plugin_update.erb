@@ -82,7 +82,7 @@ end
 
 def create_unzip_command_for(script_id)
   command = "curl #{build_vim_org_script_link(script_id)}"
-<% if configatron.core.is_windows %>
+<% if configatron.core.is_mingw %>
   command += " > blah.zip" 
 <% else %>
   command+= " | tar xv"
@@ -94,7 +94,7 @@ def download_and_unpack_zips
     FileUtils.mkdir_p(name)
     Dir.chdir(name) do
       `#{create_unzip_command_for(script_id)}`
-      <% if configatron.core.is_windows %>
+      <% if configatron.core.is_mingw %>
         `unzip blah.zip` 
         `rm blah.zip`
       <% end %>
@@ -127,7 +127,7 @@ Dir.chdir(bundles_dir) do
   unpack_bundles
   download_scripts
   download_and_unpack_zips
-<% if not configatron.core.is_cygwin %>
+<% unless configatron.core.is_cygwin %>
   update_c_extensions
 <% end %>
   cleanup_doc_file_issues

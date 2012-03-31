@@ -7,10 +7,11 @@ expand do
       :is_cygwin => true,
       :is_mingw => false,
       :is_osx => false,
-      :vi  => 'cyg-wrapper.sh C:/utils/vim/vim73/gvim.exe --binary-opt=-c,--cmd,-T,-t,--servername,--remote-send,--remote-expr --fork=2'
+      # :vi  => 'cyg-wrapper.sh C:/utils/vim/vim73/gvim.exe --binary-opt=-c,--cmd,-T,-t,--servername,--remote-send,--remote-expr --fork=2'
+      :vi  => 'vi'
     },
     :git => {
-      :autocrlf => 'true',
+      :autocrlf => 'input',
       :merge_tool => 'bc3',
       :diff_tool => 'bc3',
     },

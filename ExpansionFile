@@ -4,7 +4,9 @@ expand do
   FileUtils.mkdir bundle_folder unless Dir.exist?(bundle_folder)
 
   log "The current platform is #{RUBY_PLATFORM}"
-  platform = /dar/ =~ RUBY_PLATFORM ? 'osx' : 'mingw'
+  platform = 'osx' if /dar/ =~ RUBY_PLATFORM 
+  platform = 'mingw' if /ming/ =~ RUBY_PLATFORM 
+  platform = 'cygwin' if /cyg/ =~ RUBY_PLATFORM 
 
   configs = {
     :core => 
