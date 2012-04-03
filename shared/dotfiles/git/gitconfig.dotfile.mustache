@@ -1,6 +1,8 @@
 [core]
 autocrlf = {{ git.autocrlf }}
+{{# core.is_windows }}
 editor = {{git.editor}}
+{{/core.is_windows}}
 
 [user]
   email = {{{my.github.email}}}
