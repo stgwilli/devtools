@@ -1,7 +1,7 @@
 expand do
   configatron.configure_from_hash :core =>{
       :launcher => 'cygstart',
-      :editor => 'gvim',
+      :editor => 'vi',
       :is_windows => true,
       :is_cygwin => true,
       :is_mingw => false,
@@ -13,6 +13,7 @@ expand do
       :autocrlf => 'input',
       :merge_tool => 'bc3',
       :diff_tool => 'bc3',
+      :editor => 'vi',
     },
     :vim => {
       :environment => 'windows'

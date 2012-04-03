@@ -13,6 +13,7 @@ expand do
       :autocrlf => 'true',
       :merge_tool => 'bc3',
       :diff_tool => 'bc3',
+      :editor => 'gvim',
     },
     :vim => {
       :environment => 'windows'
