@@ -10,17 +10,20 @@ configatron.configure_from_hash :my =>
     {
       :win_style =>
       {
+        :devenv => 'C:\utils\vs2010\Common7\IDE\devenv.exe',
         :ahk_spy => 'C:\utils\autohotkey\AU3_Spy.exe',
         :process_explorer => 'C:\utils\sysinternals\procexp.exe',
         :divvy => 'C:\utils\divvy\Divvy.exe',
         :camrec => 'C:\utils\camtasia_studio\CamRecorder.exe',
         :msys => 'C:\utils\mingw\msys\1.0\msys.bat',
+        :cygwin => 'C:\utils\cygwin\cygwin.bat',
         :ahk_scripts => 'C:\users\jp\repositories\developwithpassion\devtools\windows\autohotkey\ahk*.ahk',
       },
       :unix_style =>
       {
         :mingw => '/c/utils/mingw',
-        :vim => '/c/utils/vim/vim73'
+        :vim => '/usr/local/bin/vim.exe',
+        :devenv => '/c/utils/vs2010/Common7/IDE/devenv.exe'
       }
    }
   },

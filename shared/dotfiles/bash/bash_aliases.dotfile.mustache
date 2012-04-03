@@ -1,7 +1,9 @@
 #this is a comment
 #command aliases
 alias vi={{ core.vi }}
+{{^ core.is_cygwin }}
 alias vim={{ core.vim }}
+{{/core.is_cygwin}}
 
 {{# core.is_osx }}
 alias bctags=/usr/local/Cellar/ctags/5.8/bin/ctags
@@ -15,14 +17,20 @@ alias eahk='vi {{{core.devtools_root}}}/windows/autohotkey'
 {{/core.is_windows }}
 
 {{# core.is_cygwin }}
-alias cyg-wrapper=/cygdrive/{{{core.devtools_root}}}/automation/cygwin/cyg-wrapper.sh
+alias cyg-wrapper={{{core.devtools_root}}}/automation/cygwin/cyg-wrapper.sh
 
-alias sln='cyg-wrapper /c/utils/vs2010/Common7/IDE/devenv.exe *.sln --cyg-env-convert=APPDATA,LOCALAPPDATA,ProgramData,ALLUSERSPROFILE,WINDIR --fork=1'
+alias vsln='cyg-wrapper /c/utils/vs2010/Common7/IDE/devenv.exe *.sln --cyg-env-convert=APPDATA,LOCALAPPDATA,ProgramData,ALLUSERSPROFILE,WINDIR --fork=1'
 
 alias prompt='cyg-wrapper cmd.exe --cyg-env-convert=APPDATA,LOCALAPPDATA,ProgramData,ALLUSERSPROFILE,WINDIR --fork=2'
 
 alias psh='cyg-wrapper powershell --cyg-env-convert=APPDATA,LOCALAPPDATA,ProgramData,ALLUSERSPROFILE,WINDIR --fork=2'
 alias open='cygstart'
+
+function vim()
+{
+  cyg-wrapper gvim --fork=1 $1
+}
+alias gvim=vim
 {{/core.is_cygwin }}
 
 {{# core.is_mingw }}
