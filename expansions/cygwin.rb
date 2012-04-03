@@ -7,9 +7,6 @@ expand do
     contents %w[shared hosts].as_glob_pattern
   end
 
-  copy_to [configatron.my.windows.paths.unix_style.mingw,%w[msys 1.0 etc]].as_glob_pattern do
-    contents %w[windows mingw].as_glob_pattern
-  end
 
 
   partials = glob(%w[windows autohotkey partial_*.ahk].as_glob_pattern)
