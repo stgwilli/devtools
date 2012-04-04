@@ -3,6 +3,9 @@ export PATH="/usr/local/sbin:/usr/local/mysql/bin:$(find {{{my.unix_style_devtoo
 {{# core.is_windows }}
 export PATH="{{{my.windows.paths.unix_style.vim}}}:$PATH"
 {{/core.is_windows }}
+{{# core.is_mingw }}
+export PATH=":/usr/local/bin:/bin:/mingw/bin:/c/utils/git/bin:/c/ruby/193/bin:/c/utils/mercurial:/c/utils/vim/vim73:$PATH"
+{{/core.is_mingw }}
 export EDITOR='{{{core.editor}}}'
 
 #used to show changes in the prompt for a git folder

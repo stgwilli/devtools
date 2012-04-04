@@ -14,6 +14,7 @@ automation/timers/timer
 automation/vim/vim_plugin_update
 automation/vim/twitvim
 automation/visual_studio/launch_vs_solution
+automation/visual_studio/sln
 shared/dotfiles/git/.gitconfig
 shared/dotfiles/bash/.*
 shared/dotfiles/tmux/.*
