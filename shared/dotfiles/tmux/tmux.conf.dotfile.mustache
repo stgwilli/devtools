@@ -1,11 +1,6 @@
 set-option -g default-command "reattach-to-user-namespace -l zsh"
 set-option -g default-shell /bin/zsh
 
-#Pane movement
-bind h select-pane -L
-bind j select-pane -D
-bind k select-pane -U
-bind l select-pane -R
 
 # DVTM style pane selection
 bind 1 select-pane -t 1
@@ -57,3 +52,12 @@ bind p paste-buffer
 bind -t vi-copy v begin-selection
 bind -t vi-copy y copy-selection
 bind -t vi-copy Escape cancel
+
+#Pane movement
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+bind-key Y run-shell "tmux save-buffer - | reattach-to-user-namespace pbcopy"
+bind-key V run-shell "tmux set-buffer - | pbpaste"
