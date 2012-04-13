@@ -1,2 +1,21 @@
-%w{git growlnotify macvim coreutils ctags tmux brew install reattach-to-user-namespace}.each{|item| system("brew install #{item}")}
+%w[git
+coreutils
+ctags
+freetds
+gdbm
+growlnotify
+ircii
+libevent
+macvim
+neon
+node
+pkg-config
+readline
+reattach-to-user-namespace
+sqlite
+subversion
+tmux
+unixodbc
+].each{|item| system("brew install #{item}")}
+
 
