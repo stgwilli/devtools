@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+install_rvm()
+{
+    if [ ! -x ~/.rvm ]; then 
+      bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+    fi
+    source $HOME/.rvm/scripts/rvm
+    cp ~/repositories/developwithpassion/devtools/shared/dotfiles/rvm/global.gems ~/.rvm/gemsets/
+    rvm reload
+    rvm get head
+    rvm reload
+}
+
+install_some_rubies()
+{
+    source $HOME/.rvm/scripts/rvm
+    rvm install ruby-1.9.3
+    rvm install ruby-1.9.2
+    rvm install macruby-0.10
+    rvm install ruby-1.8.7
+    rvm --default ruby-1.9.3
+    rvm system
+}
+
+install_rvm
+install_some_rubies
