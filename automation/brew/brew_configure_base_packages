@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 %w[git
 coreutils
 ctags
@@ -13,7 +15,6 @@ pkg-config
 readline
 reattach-to-user-namespace
 sqlite
-subversion
 tmux
 unixodbc
 ].each{|item| system("brew install #{item}")}
