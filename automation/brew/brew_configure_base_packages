@@ -17,6 +17,7 @@ reattach-to-user-namespace
 sqlite
 tmux
 unixodbc
+zsh
 ].each{|item| system("brew install #{item}")}
 
 
