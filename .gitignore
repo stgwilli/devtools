@@ -9,7 +9,6 @@ tags
 automation/autohotkey/ahk_start
 automation/git/*.sh
 automation/divvy/divvy
-automation/rvm/rvm_install
 automation/timers/timer
 automation/vim/vim_plugin_update
 automation/vim/twitvim
@@ -17,6 +16,7 @@ automation/visual_studio/launch_vs_solution
 automation/visual_studio/sln
 shared/dotfiles/git/.gitconfig
 shared/dotfiles/bash/.*
+shared/dotfiles/rvm/.rvmrc
 shared/dotfiles/tmux/.*
 shared/dotfiles/vim/.vimrc
 shared/dotfiles/vim/.vim_runtime/vimrc
