@@ -2,5 +2,5 @@
 
 require 'date'
 
-system("mvim","/dropbox/tasks/#{Date.today.year}")
+system("vim","/dropbox/tasks/#{Date.today.year}")
 
