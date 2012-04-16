@@ -36,7 +36,7 @@ return
 
 ;launch the cygwin shell
 cyg:
-run_regular_program(cygwin)
+run_start_menu_program(cygwin)
 return
 
 ;launch the mingw shell
