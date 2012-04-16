@@ -41,6 +41,8 @@ configs = {
   }
 }
 
+configatron.configure_from_hash configs
+
 expand do
   copy_to [configatron.core.home,'.ssh'].as_glob_pattern do
     contents configatron.my.ssh_folder
