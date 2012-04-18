@@ -12,15 +12,4 @@ install_rvm()
     rvm reload
 }
 
-install_some_rubies()
-{
-    source $HOME/.rvm/scripts/rvm
-    rvm install ruby-1.9.3
-    rvm install ruby-1.9.2
-    rvm install ruby-1.8.7
-    rvm --default ruby-1.9.3
-    rvm system
-}
-
 install_rvm
-install_some_rubies

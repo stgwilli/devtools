@@ -9,7 +9,7 @@ install_quicksilver()
         cp -R "Quicksilver.app" /Applications
         popd
     fi
-    resync_home.rb
+    devtools_sync
 }
 
 install_pygments()

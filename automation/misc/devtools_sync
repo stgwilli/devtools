@@ -2,5 +2,5 @@
 
 . ~/.bash_source_rvm
 cd ~/repositories/developwithpassion/devtools
-dwp_expand
+expands
 ahk_start

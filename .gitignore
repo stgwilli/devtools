@@ -12,13 +12,17 @@ automation/divvy/divvy
 automation/timers/timer
 automation/vim/vim_plugin_update
 automation/vim/twitvim
+automation/visual_studio/launch_vs_solution
+automation/visual_studio/sln
 shared/dotfiles/git/.gitconfig
 shared/dotfiles/bash/.*
+shared/dotfiles/rvm/.rvmrc
 shared/dotfiles/tmux/.*
 shared/dotfiles/vim/.vimrc
 shared/dotfiles/vim/.vim_runtime/vimrc
 shared/dotfiles/vim/.vim_runtime/wordlist.vim
 shared/dotfiles/vim/vimrc.dotfile.erb
+shared/dotfiles/pentadactyl/.pentadactylrc
 .vikingrc
 shared/hosts/hosts
 shared/dotfiles/vim/.vim_runtime/bundle

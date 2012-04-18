@@ -1,5 +1,5 @@
 ;===========================
-actions="div,cm,as,e,kk,lm,clm,mmsc,mmc,mmn,wtr,wtl,wbl,wbr,wc,wf,rwind,ww,rr,sm,sr,se,sd,x,savr,ming,proc;lk,ulk"
+actions="div,cm,as,e,kk,lm,clm,mmsc,mmc,mmn,wtr,wtl,wbl,wbr,wc,wf,rwind,ww,rr,sm,sr,se,sd,x,savr,cyg,ming,proc,lk,ulk;"
 LWIN & y::
 Input,command_input,T1/5,{enter}{esc}{tab},%actions%
 if (ErrorLevel = Max | ErrorLevel = Timeout )
@@ -32,6 +32,11 @@ return
 ;activate the menu in a shell window
 cm:
 click_mouse_in_active_window(14,16)
+return
+
+;launch the cygwin shell
+cyg:
+run_start_menu_program(cygwin)
 return
 
 ;launch the mingw shell

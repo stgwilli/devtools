@@ -1,7 +1,12 @@
 #!/usr/bin/env ruby
 
 def launch(solution)
- `start "c:\\Program Files (x86)\\Microsoft Visual Studio\\10.0\\Common7\\IDE\\devenv.exe" #{solution}`
+  {{# core.is_cygwin}}
+    system("launch_vs_solution #{solution}")
+  {{/core.is_cygwin}}
+  {{# core.is_mingw}}
+    `start "{{{my.windows.paths.unix_style.devenv}}}" #{solution}`
+  {{/core.is_mingw}}
 end
 
 solutions = Dir.glob("**/*.sln")

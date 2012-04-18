@@ -1,6 +1,5 @@
 #!/bin/bash
 
 rm Gemfile.lock
-gem install bundler
 bundle install
-dwp_expand
+expands

@@ -1,18 +1,19 @@
 expand do
   configatron.configure_from_hash :core =>{
-      :launcher => '',
-      :vim => 'gvim',
-      :editor => 'gvim',
+      :launcher => 'cygstart',
+      :editor => 'vi',
       :is_windows => true,
       :is_cygwin => true,
       :is_mingw => false,
       :is_osx => false,
-      :vi  => 'cyg-wrapper.sh C:/utils/vim/vim73/gvim.exe --binary-opt=-c,--cmd,-T,-t,--servername,--remote-send,--remote-expr --fork=2'
+      :vi  => '/usr/local/bin/vim.exe',
+      :vim => 'vim'
     },
     :git => {
-      :autocrlf => 'true',
+      :autocrlf => 'input',
       :merge_tool => 'bc3',
       :diff_tool => 'bc3',
+      :editor => 'vi',
     },
     :vim => {
       :environment => 'windows'

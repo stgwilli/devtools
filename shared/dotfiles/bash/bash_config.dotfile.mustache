@@ -2,13 +2,13 @@
 bind "set completion-ignore-case on"
 #enable vim style command line behaviour
 set -o vi
-{{# core.is_windows}}
+{{# core.is_mingw}}
 function vie()
 {
   bind '"\C-i":complete'
   bind '"\Tab":complete'
 }
-{{/core.is_windows}}
+{{/core.is_mingw}}
 
 #don't duplicate history lines
 HISTCONTROL=ignoredups:ignorespace

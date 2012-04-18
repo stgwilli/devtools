@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cyg-wrapper.sh {{ my.windows.paths.unix_style.devenv }} --cyg-env-convert=APPDATA,LOCALAPPDATA,ProgramData,ALLUSERSPROFILE,WINDIR --fork=1  $*
