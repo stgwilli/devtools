@@ -23,7 +23,7 @@ configs = {
         :unix_style =>
         {
           :mingw => '/c/utils/mingw',
-          :vim => '/usr/local/bin/vim.exe',
+          :vim => '/c/utils/vim/vim73',
           :devenv => '/c/utils/vs2010/Common7/IDE/devenv.exe'
         }
      }

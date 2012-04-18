@@ -1,4 +1,3 @@
-export VIM_APP_DIR=/usr/local/bin/MacVim-7_2-stable-1_2
 export PATH="/usr/local/bin:/usr/local/sbin:$(find {{{my.unix_style_devtools_root}}}/automation -name '.*' -prune -o -type d | tr "\n" ":"):$PATH"
 {{# core.is_mingw }}
 export PATH="$PATH:/c/utils/git/bin:/c/ruby/193/bin:/c/utils/mercurial:{{{my.windows.paths.unix_style.vim}}}"
