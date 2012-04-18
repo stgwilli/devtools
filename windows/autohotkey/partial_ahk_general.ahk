@@ -1,5 +1,5 @@
 ;===========================
-actions="div,cm,as,e,kk,lm,clm,mmsc,mmc,mmn,wtr,wtl,wbl,wbr,wc,wf,rwind,ww,rr,sm,sr,se,sd,x,savr,ming,proc"
+actions="div,cm,as,e,kk,lm,clm,mmsc,mmc,mmn,wtr,wtl,wbl,wbr,wc,wf,rwind,ww,rr,sm,sr,se,sd,x,savr,ming,proc;lk,ulk"
 LWIN & y::
 Input,command_input,T1/5,{enter}{esc}{tab},%actions%
 if (ErrorLevel = Max | ErrorLevel = Timeout )
@@ -132,7 +132,14 @@ sm:
 send, {LWIN}
 return
 
+;lock and unlock computer
+lk:
+RegWrite, REG_DWORD, HKEY_CURRENT_USER, Software\Microsoft\Windows\CurrentVersion\Policies\System, DisableLockWorkstation, 0
+return
 
+ulk:
+RegWrite, REG_DWORD, HKEY_CURRENT_USER, Software\Microsoft\Windows\CurrentVersion\Policies\System, DisableLockWorkstation, 1
+return
 
 ;========================================
 ;Camtasia
