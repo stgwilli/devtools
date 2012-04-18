@@ -1,6 +1,5 @@
 expand do
   configatron.configure_from_hash :core =>{
-      :ssh_tools_path => '/usr/bin',
       :launcher => 'cygstart',
       :editor => 'vi',
       :is_windows => true,

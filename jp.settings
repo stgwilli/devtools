@@ -1,8 +1,4 @@
 configs = {
-  :core => 
-  {
-    :ssh_tools_path => "/usr/local/bin"
-  },
   :my =>
   {
     :unix_style_devtools_root => '~/repositories/developwithpassion/devtools',
