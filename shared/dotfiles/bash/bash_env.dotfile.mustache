@@ -1,15 +1,12 @@
 OLD_PATH=$PATH
 export PATH="/usr/local/bin:/bin:/usr/local/sbin"
-export PATH="$PATH:$(find {{{my.unix_style_devtools_root}}}/automation -name '.*' -prune -o -type d | tr "\n" ":")"
 
 {{# core.is_mingw }}
 export PATH="$PATH:/c/utils/git/bin:/c/ruby/193/bin:/c/utils/mercurial:{{{my.windows.paths.unix_style.vim}}}"
 {{/core.is_mingw }}
 
-{{# core.is_windows}}
-export PATH="$PATH:$OLD_PATH"
-{{/core.is_windows}}
-
+export PATH="$OLD_PATH:$PATH"
+export PATH="$PATH:$(find {{{my.unix_style_devtools_root}}}/automation -name '.*' -prune -o -type d | tr "\n" ":")"
 export EDITOR='{{{core.editor}}}'
 
 #used to show changes in the prompt for a git folder
