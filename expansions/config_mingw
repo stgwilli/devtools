@@ -7,7 +7,8 @@ expand do
       :is_cygwin => false,
       :is_mingw => true,
       :is_osx => false,
-      :vi => "/c/utils/vim/vim73/vim.exe"
+      :vi => "/c/utils/vim/vim73/vim.exe",
+      :term => 'xterm-color'
     },
     :git => {
       :autocrlf => 'true',

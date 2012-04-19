@@ -1,7 +1,10 @@
 function zsh_source_scripts()
 {
-  . ~/.bash_aliases
   . ~/.bash_env
+  . ~/.bash_aliases
+  {{# core.is_cygwin }}
+  . ~/.bash_ssh
+  {{/core.is_cygwin }}
   if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then source "$HOME/.rvm/scripts/rvm" ; fi
 }
 
@@ -42,3 +45,7 @@ function zsh_set_options()
 zsh_source_scripts
 zsh_set_options
 
+{{# core.is_cygwin}}
+cd ~/
+source ~/.rvm/scripts/rvm
+{{/core.is_cygwin}}

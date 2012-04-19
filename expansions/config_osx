@@ -8,6 +8,7 @@ expand do
       :is_mingw => false,
       :is_osx => true,
       :vi => "'mvim -v'",
+      :term => 'xterm-color'
     },
     :git => {
       :autocrlf => 'input',

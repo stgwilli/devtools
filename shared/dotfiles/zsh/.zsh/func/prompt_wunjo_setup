@@ -125,7 +125,7 @@ prompt_wunjo_setup() {
 	PROMPT+="$pc[hist]%h$pc[reset] "
 	PROMPT+="$pc[shortpath]%1~$pc[reset]"
 	PROMPT+="\$(prompt_wunjo_scm_branch)"
-	PROMPT+=" $pc[#]⇒ $pc[reset] "
+	PROMPT+=" $pc[#]→$pc[reset] "
 
 	RPROMPT=
   RPROMPT+="$p_date "
