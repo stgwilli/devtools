@@ -1,5 +1,5 @@
 ;===========================
-actions="div,cm,as,e,kk,lm,clm,mmsc,mmc,mmn,wtr,wtl,wbl,wbr,wc,wf,rwind,ww,rr,sm,sr,se,sd,x,savr,cyg,ming,proc"
+actions="div,cm,as,e,kk,lm,clm,mmsc,mmc,mmn,wtr,wtl,wbl,wbr,wc,wf,rwind,ww,rr,sm,sr,se,sd,x,savr,cyg,ming,proc,lw,ulw"
 LWIN & y::
 Input,command_input,T1/5,{enter}{esc}{tab},%actions%
 if (ErrorLevel = Max | ErrorLevel = Timeout )
@@ -46,6 +46,14 @@ return
 
 lm:
 Click
+return
+
+lw:
+RegWrite, REG_DWORD, HKEY_CURRENT_USER, Software\Microsoft\Windows\CurrentVersion\Policies\System, DisableLockWorkstation, 0
+return
+
+ulw:
+RegWrite, REG_DWORD, HKEY_CURRENT_USER, Software\Microsoft\Windows\CurrentVersion\Policies\System, DisableLockWorkstation, 1
 return
 
 clm:
