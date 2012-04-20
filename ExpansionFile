@@ -19,8 +19,9 @@ expand do
   platform_config_file = "expansions/config_#{platform}"
   log "Loading config file #{platform_config_file}"
   load "#{platform_config_file}"
+  user = File.basename(`whoami`.chomp)
 
-  load "#{File.basename(`whoami`.chomp)}.settings"
+  load "#{user}.settings"
 
   look_for_templates_in "**/*.{erb,mustache}"
 

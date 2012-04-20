@@ -106,13 +106,21 @@ alias dwp='cd ~/repositories/github/dwp'
 alias prep='cd ~/repositories/github/dwp/prep'
 alias app='cd ~/repositories/github/dwp/app'
 {{/core.is_windows }}
-alias daxko='cd ~/repositories/daxko'
 alias developwithpassion='cd ~/repositories/developwithpassion'
 alias myssh='cd ~/repositories/developwithpassion/ssh'
 alias github='cd ~/repositories/github'
 alias devtools='cd {{{core.devtools_root}}}'
 alias blog='cd ~/repositories/developwithpassion/blog.developwithpassion.com'
-alias opsapi='cd ~/repositories/daxko/operations_api'
+
+{{^ core.is_cygwin }}
+alias daxko='cd ~/repositories/daxko'
+{{/core.is_cygwin }}
+{{# core.is_cygwin}}
+alias daxko='cd /c/users/jp/repositories/daxko'
+alias ~~='cd /c/users/jp'
+{{/core.is_cygwin }}
+
+alias opsapi='daxko;cd operations_api'
 
 #file alises
 alias licenses='vi ~/repositories/developwithpassion/developwithpassion.com/licenses/licenses.markdown'
