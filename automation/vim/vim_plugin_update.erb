@@ -15,7 +15,9 @@ require 'open-uri'
  "vim-ruby" => %w[vim-ruby],
  :developwithpassion => %w[twitvim],
  :kchmck => %w[vim-coffee-script],
- :altercation => %w[vim-colors-solarized]
+ :altercation => %w[vim-colors-solarized],
+ :ecomba => %w[vim-ruby-refactoring],
+ :benmills => %w[vimux]
 }
 
 @vim_org_scripts = [
@@ -43,8 +45,6 @@ end
   ["dbext", "13339"]
 ]
 
-@cxtensions = [
-]
 
 @bundles_to_ignore = %w[developwithpassion]
 
@@ -102,12 +102,6 @@ def download_and_unpack_zips
   end
 end
 
-def update_c_extensions
-  @cxtensions.each do|extension|
-    extension.call()
-  end
-end
-
 def cleanup_doc_file_issues
   file = File.join(%w[dbext doc dbext.txt])
   contents = ""
@@ -127,8 +121,5 @@ Dir.chdir(bundles_dir) do
   unpack_bundles
   download_scripts
   download_and_unpack_zips
-<% unless configatron.core.is_cygwin %>
-  update_c_extensions
-<% end %>
   cleanup_doc_file_issues
 end

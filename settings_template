@@ -29,21 +29,9 @@ configatron.configure_from_hash :my =>
   },
   :github => 
   {
-    :email => 'jp@developwithpassion.com',
-    :full_name => 'Jean-Paul S. Boodhoo',
-    :user => 'developwithpassion'
+    :email => 'your email address',
+    :full_name => 'Name',
+    :user => 'github user name'
   }
 }
 
-expand do
-  copy_to [configatron.core.home,'.ssh'].as_glob_pattern do
-    contents configatron.my.ssh_folder
-  end
-end
-
-expand do
-  specific_folders = [configatron.core.home,%w[repositories developwithpassion mac_library_preferences]].as_glob_pattern
-  copy_to configatron.core.home do
-    contents specific_folders
-  end
-end if configatron.core.is_osx

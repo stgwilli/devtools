@@ -4,7 +4,6 @@ expand do
   register_executable %w[automation autohotkey ahk_start].as_glob_pattern
   register_executable %w[automation timers timer].as_glob_pattern
   register_executable %w[automation perl ack].as_glob_pattern
-  register_executable %w[automation rvm rvm_install].as_glob_pattern
   register_executable %w[automation visual_studio sln].as_glob_pattern
   register_executable %w[automation visual_studio launch_vs_solution].as_glob_pattern
 
