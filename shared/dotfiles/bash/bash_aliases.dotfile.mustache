@@ -28,7 +28,7 @@ alias open='cygstart'
 
 function vim()
 {
-  cyg-wrapper gvim --fork=1 $1
+  cyg-wrapper {{{my.windows.paths.unix_style.vim}}}/gvim.exe --fork=1 $*
 }
 {{/core.is_cygwin }}
 
