@@ -42,7 +42,7 @@ alias rm='rm -fr $*'
 alias qtar='tar -xzvf $*'
 
 #editing command aliases
-alias change_hosts='devtools;vi shared/hosts/hosts.erb'
+alias change_hosts='devtools;vi shared/hosts/hosts.mustache'
 
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
