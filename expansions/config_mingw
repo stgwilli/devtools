@@ -1,7 +1,7 @@
 expand do
   configatron.configure_from_hash :core =>{
       :launcher => '',
-      :vim => 'gvim.exe',
+      :vim => "'start C:/utils/vim/vim73/gvim.exe'",
       :editor => 'vi',
       :is_windows => true,
       :is_cygwin => false,
