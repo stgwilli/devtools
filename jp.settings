@@ -1,3 +1,9 @@
+class String
+  def escape
+    self.gsub(/\\/,'/')
+  end
+end
+
 configs = {
   :my =>
   {
@@ -12,7 +18,6 @@ configs = {
         :win_style =>
         {
           :devenv => 'C:\utils\vs2010\Common7\IDE\devenv.exe',
-          :devenv_alt => delayed{configatron.my.paths.win_style.gsub('/\\/','/')},
           :ahk_spy => 'C:\utils\autohotkey\AU3_Spy.exe',
           :process_explorer => 'C:\utils\sysinternals\procexp.exe',
           :divvy => 'C:\utils\divvy\Divvy.exe',

@@ -5,7 +5,7 @@ def launch(solution)
     system("launch_vs_solution #{solution}")
   {{/core.is_cygwin}}
   {{# core.is_mingw}}
-    `start {{{my.windows.paths.win_style.devenv_alt}}} #{solution}`
+    `start {{{my.windows.paths.win_style.devenv.escape}}} #{solution}`
   {{/core.is_mingw}}
 end
 
