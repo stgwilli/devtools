@@ -665,23 +665,23 @@
 				<Alias Name="props" Definition="View.PropertiesWindow"/>
 				<Alias Name="memory1" Definition="Debug.Memory1"/>
 				<Alias Name="memory2" Definition="Debug.Memory2"/>
-				<Alias Name="memory3" Definition="Debug.Memory3"/>
 				<Alias Name="Lcase" Definition="Edit.MakeLowercase"/>
-				<Alias Name="memory4" Definition="Debug.Memory4"/>
-				<Alias Name="locals" Definition="Debug.Locals"/>
+				<Alias Name="memory3" Definition="Debug.Memory3"/>
 				<Alias Name="kb" Definition="Debug.ListCallStack"/>
+				<Alias Name="locals" Definition="Debug.Locals"/>
+				<Alias Name="memory4" Definition="Debug.Memory4"/>
 				<Alias Name="da" Definition="Debug.ListMemory /Ansi"/>
-				<Alias Name="db" Definition="Debug.ListMemory /Format:OneByte"/>
 				<Alias Name="DelEOL" Definition="Edit.DeleteToEOL"/>
+				<Alias Name="db" Definition="Debug.ListMemory /Format:OneByte"/>
 				<Alias Name="dc" Definition="Debug.ListMemory /Format:FourBytes /Ansi"/>
 				<Alias Name="dd" Definition="Debug.ListMemory /Format:FourBytes"/>
 				<Alias Name="df" Definition="Debug.ListMemory /Format:Float"/>
-				<Alias Name="WordWrap" Definition="Edit.ToggleWordWrap"/>
 				<Alias Name="AddProj" Definition="File.AddNewProject"/>
+				<Alias Name="WordWrap" Definition="Edit.ToggleWordWrap"/>
 				<Alias Name="dq" Definition="Debug.ListMemory /Format:EightBytes"/>
 				<Alias Name="du" Definition="Debug.ListMemory /Unicode"/>
-				<Alias Name="designer" Definition="View.ViewDesigner"/>
 				<Alias Name="ListMembers" Definition="Edit.ListMembers"/>
+				<Alias Name="designer" Definition="View.ViewDesigner"/>
 				<Alias Name="code" Definition="View.ViewCode"/>
 				<Alias Name="ParamInfo" Definition="Edit.ParameterInfo"/>
 				<Alias Name="DelHSp" Definition="Edit.DeleteHorizontalWhiteSpace"/>
@@ -693,14 +693,14 @@
 				<Alias Name="TileV" Definition="Window.TileVertically"/>
 				<Alias Name="OutlineDefs" Definition="Edit.CollapsetoDefinitions"/>
 				<Alias Name="CloseAll" Definition="Window.CloseAllDocuments"/>
-				<Alias Name="ToggleBook" Definition="Edit.ToggleBookmark"/>
 				<Alias Name="InsertFile" Definition="Edit.InsertFileAsText"/>
+				<Alias Name="ToggleBook" Definition="Edit.ToggleBookmark"/>
 				<Alias Name="autos" Definition="Debug.Autos"/>
 				<Alias Name="SaveAll" Definition="File.SaveAll"/>
 				<Alias Name="new" Definition="File.NewFile"/>
 				<Alias Name="d" Definition="Debug.ListMemory"/>
-				<Alias Name="rtc" Definition="Debug.RunToCursor"/>
 				<Alias Name="navigate" Definition="View.WebBrowser"/>
+				<Alias Name="rtc" Definition="Debug.RunToCursor"/>
 				<Alias Name="g" Definition="Debug.Start"/>
 				<Alias Name="k" Definition="Debug.ListCallStack"/>
 				<Alias Name="format" Definition="Edit.FormatSelection"/>
@@ -708,10 +708,10 @@
 				<Alias Name="p" Definition="Debug.StepOver"/>
 				<Alias Name="q" Definition="Debug.StopDebugging"/>
 				<Alias Name="r" Definition="Debug.ListRegisters"/>
-				<Alias Name="t" Definition="Debug.StepInto"/>
 				<Alias Name="~*kb" Definition="Debug.ListCallStack /AllThreads"/>
-				<Alias Name="u" Definition="Debug.ListDisassembly"/>
+				<Alias Name="t" Definition="Debug.StepInto"/>
 				<Alias Name="nf" Definition="File.NewFile"/>
+				<Alias Name="u" Definition="Debug.ListDisassembly"/>
 				<Alias Name="registers" Definition="Debug.Registers"/>
 				<Alias Name="LineCut" Definition="Edit.LineCut"/>
 				<Alias Name="memory" Definition="memory1"/>
@@ -721,9 +721,9 @@
 				<Alias Name="DelBOL" Definition="Edit.DeleteToBOL"/>
 				<Alias Name="~*k" Definition="Debug.ListCallStack /AllThreads"/>
 				<Alias Name="NextBook" Definition="Edit.NextBookmark"/>
-				<Alias Name="TaskList" Definition="View.TaskList"/>
-				<Alias Name="Ucase" Definition="Edit.MakeUppercase"/>
 				<Alias Name="NewProj" Definition="File.NewProject"/>
+				<Alias Name="Ucase" Definition="Edit.MakeUppercase"/>
+				<Alias Name="TaskList" Definition="View.TaskList"/>
 				<Alias Name="Untabify" Definition="Edit.UntabifySelectedLines"/>
 				<Alias Name="GotoBrace" Definition="Edit.GotoBrace"/>
 				<Alias Name="cls" Definition="Edit.ClearAll"/>
@@ -732,29 +732,29 @@
 				<Alias Name="log" Definition="Tools.LogCommandWindowOutput"/>
 				<Alias Name="print" Definition="File.Print"/>
 				<Alias Name="op" Definition="File.OpenProject"/>
-				<Alias Name="eval" Definition="Debug.EvaluateStatement"/>
 				<Alias Name="alias" Definition="Tools.Alias"/>
+				<Alias Name="eval" Definition="Debug.EvaluateStatement"/>
 				<Alias Name="watch" Definition="Debug.Watch"/>
 				<Alias Name="cmd" Definition="View.CommandWindow"/>
-				<Alias Name="help" Definition="Help.F1Help"/>
 				<Alias Name="GotoLn" Definition="Edit.GoTo"/>
+				<Alias Name="help" Definition="Help.F1Help"/>
 				<Alias Name="disasm" Definition="Debug.Disassembly"/>
 				<Alias Name="redo" Definition="Edit.Redo"/>
-				<Alias Name="undo" Definition="Edit.Undo"/>
-				<Alias Name="tabify" Definition="Edit.TabifySelectedLines"/>
 				<Alias Name="LineDel" Definition="Edit.LineDelete"/>
+				<Alias Name="tabify" Definition="Edit.TabifySelectedLines"/>
+				<Alias Name="undo" Definition="Edit.Undo"/>
 				<Alias Name="StopOutlining" Definition="Edit.CollapsetoDefinitions"/>
 				<Alias Name="pr" Definition="Debug.StepOut"/>
-				<Alias Name="SaveAs" Definition="File.SaveSelectedItemsAs"/>
 				<Alias Name="FullScreen" Definition="View.FullScreen"/>
+				<Alias Name="SaveAs" Definition="File.SaveSelectedItemsAs"/>
 				<Alias Name="nav" Definition="navigate"/>
-				<Alias Name="SwapAnchor" Definition="Edit.SwapAnchor"/>
 				<Alias Name="exit" Definition="File.Exit"/>
-				<Alias Name="threads" Definition="Debug.Threads"/>
+				<Alias Name="SwapAnchor" Definition="Edit.SwapAnchor"/>
 				<Alias Name="PrevBook" Definition="Edit.PreviousBookmark"/>
+				<Alias Name="threads" Definition="Debug.Threads"/>
 				<Alias Name="close" Definition="File.Close"/>
-				<Alias Name="toolbox" Definition="View.Toolbox"/>
 				<Alias Name="bl" Definition="Debug.Breakpoints"/>
+				<Alias Name="toolbox" Definition="View.Toolbox"/>
 				<Alias Name="bp" Definition="Debug.ToggleBreakpoint"/>
 				<Alias Name="??" Definition="Debug.QuickWatch"/>
 				<Alias Name="StopFind" Definition="Edit.FindInFiles /stop"/>
@@ -774,7 +774,7 @@
 						<Column Name="Bitmap" Width="17" Visibility="Visible" SortPriority="-1" SortDirection="Up"/>
 						<Column Name="ProviderKnowsOrder" Width="19" Visibility="Visible" SortPriority="0" SortDirection="Up"/>
 						<Column Name="Checked" Width="28" Visibility="Invisible" SortPriority="-1" SortDirection="Up"/>
-						<Column Name="Description" Width="508" Visibility="Visible" SortPriority="-1" SortDirection="Up"/>
+						<Column Name="Description" Width="1015" Visibility="Visible" SortPriority="-1" SortDirection="Up"/>
 						<Column Name="File" Width="96" Visibility="Visible" SortPriority="-1" SortDirection="Up"/>
 						<Column Name="Line" Width="70" Visibility="Visible" SortPriority="-1" SortDirection="Up"/>
 						<Column Name="Column" Width="70" Visibility="Visible" SortPriority="-1" SortDirection="Up"/>
@@ -920,7 +920,7 @@
 			<PropertyValue name="HideFindAfterMatchFound">0</PropertyValue>
 			<PropertyValue name="HitReplaced">1</PropertyValue>
 			<PropertyValue name="Syntax">Regex</PropertyValue>
-			<PropertyValue name="Quick Pane Display Options">0</PropertyValue>
+			<PropertyValue name="In Files Pane Display Options">0</PropertyValue>
 			<PropertyValue name="NumberOfScopes">1</PropertyValue>
 			<PropertyValue name="NamedScopes&gt;0">Ruby&gt;C:\ruby\ruby-1.8.2&gt;{4A812F3C-7B1A-4987-9769-461F20EB25CB}</PropertyValue>
 		</Category>
@@ -1199,24 +1199,16 @@
 					<RemoveShortcut Command="Edit.LineOpenAbove" Scope="Text Editor">Ctrl+Enter</RemoveShortcut>
 					<RemoveShortcut Command="ProjectandSolutionContextMenus.Item.MoveDown" Scope="Global">Alt+Down Arrow</RemoveShortcut>
 					<RemoveShortcut Command="ProjectandSolutionContextMenus.Item.MoveUp" Scope="Global">Alt+Up Arrow</RemoveShortcut>
-					<RemoveShortcut Command="ViEmu.KeypressCtrlW" Scope="Text Editor">Ctrl+W</RemoveShortcut>
-					<RemoveShortcut Command="ViEmu.KeypressCtrlD" Scope="Text Editor">Ctrl+D</RemoveShortcut>
 					<RemoveShortcut Command="Edit.ToggleCompletionMode" Scope="Text Editor">Ctrl+Alt+Space</RemoveShortcut>
 					<RemoveShortcut Command="Edit.ParameterInfo" Scope="Text Editor">Ctrl+Shift+Space</RemoveShortcut>
-					<RemoveShortcut Command="ViEmu.KeypressCtrlP" Scope="Text Editor">Ctrl+P</RemoveShortcut>
 					<RemoveShortcut Command="Tools.RunTemporaryMacro" Scope="Global">Ctrl+Shift+P</RemoveShortcut>
 					<RemoveShortcut Command="EditorContextMenus.CodeWindow.RunSelection" Scope="Global">Ctrl+Q</RemoveShortcut>
-					<RemoveShortcut Command="ViEmu.KeypressCtrlQ" Scope="Text Editor">Ctrl+Q</RemoveShortcut>
 					<RemoveShortcut Command="File.NewFile" Scope="Global">Ctrl+N</RemoveShortcut>
-					<RemoveShortcut Command="ViEmu.KeypressCtrlN" Scope="Text Editor">Ctrl+N</RemoveShortcut>
 					<RemoveShortcut Command="File.NewProject" Scope="Global">Ctrl+Shift+N</RemoveShortcut>
 					<RemoveShortcut Command="Edit.GoToDeclaration" Scope="Global">Ctrl+F12</RemoveShortcut>
 					<RemoveShortcut Command="Debug.BreakatFunction" Scope="Global">Ctrl+B</RemoveShortcut>
-					<RemoveShortcut Command="ViEmu.KeypressCtrlB" Scope="Text Editor">Ctrl+B</RemoveShortcut>
-					<RemoveShortcut Command="ViEmu.KeypressCtrlU" Scope="Text Editor">Ctrl+U</RemoveShortcut>
 					<RemoveShortcut Command="Debug.Breakpoints" Scope="Global">Ctrl+Alt+B</RemoveShortcut>
 					<RemoveShortcut Command="Edit.WordTranspose" Scope="Text Editor">Ctrl+Shift+T</RemoveShortcut>
-					<RemoveShortcut Command="ViEmu.KeypressCtrlLeftSquareBracket" Scope="Text Editor">Ctrl+[</RemoveShortcut>
 					<RemoveShortcut Command="Edit.OpenFile" Scope="Global">Ctrl+Shift+G</RemoveShortcut>
 					<RemoveShortcut Command="Window.NextToolWindowNav" Scope="Global">Alt+F7</RemoveShortcut>
 					<RemoveShortcut Command="Window.PreviousToolWindowNav" Scope="Global">Shift+Alt+F7</RemoveShortcut>
@@ -1238,7 +1230,6 @@
 					<RemoveShortcut Command="Edit.WordPreviousExtendColumn" Scope="Text Editor">Ctrl+Shift+Alt+Left Arrow</RemoveShortcut>
 					<RemoveShortcut Command="Edit.WordNextExtendColumn" Scope="Text Editor">Ctrl+Shift+Alt+Right Arrow</RemoveShortcut>
 					<RemoveShortcut Command="View.F#Interactive" Scope="Global">Ctrl+Alt+F</RemoveShortcut>
-					<RemoveShortcut Command="ViEmu.KeypressCtrlE" Scope="Text Editor">Ctrl+E</RemoveShortcut>
 					<RemoveShortcut Command="View.DocumentOutline" Scope="Global">Ctrl+Alt+T</RemoveShortcut>
 					<RemoveShortcut Command="View.WebBrowser" Scope="Global">Ctrl+Alt+R</RemoveShortcut>
 					<RemoveShortcut Command="Edit.GoToDefinition" Scope="Global">F12</RemoveShortcut>
@@ -1252,15 +1243,7 @@
 					<RemoveShortcut Command="Project.Override" Scope="Global">Ctrl+Alt+Ins</RemoveShortcut>
 					<RemoveShortcut Command="Edit.ListMembers" Scope="Text Editor">Ctrl+J</RemoveShortcut>
 					<RemoveShortcut Command="EditorContextMenus.CodeWindow.SendToInteractive" Scope="Text Editor">Alt+Enter</RemoveShortcut>
-					<Shortcut Command="ViEmu.KeypressCtrlC" Scope="Text Editor">Ctrl+C</Shortcut>
-					<Shortcut Command="ViEmu.KeypressCtrlF" Scope="Text Editor">Ctrl+F</Shortcut>
-					<Shortcut Command="ViEmu.KeypressCtrlI" Scope="Text Editor">Ctrl+I</Shortcut>
-					<Shortcut Command="ViEmu.KeypressCtrlO" Scope="Text Editor">Ctrl+O</Shortcut>
-					<Shortcut Command="ViEmu.KeypressCtrlR" Scope="Text Editor">Ctrl+R</Shortcut>
-					<Shortcut Command="ViEmu.KeypressCtrlT" Scope="Text Editor">Ctrl+T</Shortcut>
-					<Shortcut Command="ViEmu.KeypressCtrlV" Scope="Text Editor">Ctrl+V</Shortcut>
-					<Shortcut Command="ViEmu.KeypressCtrlY" Scope="Text Editor">Ctrl+Y</Shortcut>
-					<Shortcut Command="ViEmu.KeypressCtrlRightSquareBracket" Scope="Text Editor">Ctrl+]</Shortcut>
+					<RemoveShortcut Command="Edit.Find" Scope="Global">Ctrl+F</RemoveShortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoPreviousOccurence" Scope="Text Editor">Ctrl+Alt+Up Arrow</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoPreviousOccurence" Scope="Global">Ctrl+Alt+Up Arrow</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoNextOccurence" Scope="Text Editor">Ctrl+Alt+Down Arrow</Shortcut>
@@ -1272,19 +1255,14 @@
 					<Shortcut Command="ReSharper.ReSharper_GotoNextMethod" Scope="Global">Alt+Down Arrow</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoPrevMethod" Scope="Text Editor">Alt+Up Arrow</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoPrevMethod" Scope="Global">Alt+Up Arrow</Shortcut>
-					<Shortcut Command="ReSharper.ReSharper_ExtendSelection" Scope="Text Editor">Ctrl+W</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_ShrinkSelection" Scope="Text Editor">Ctrl+Shift+W</Shortcut>
-					<Shortcut Command="ReSharper.ReSharper_DuplicateText" Scope="Text Editor">Ctrl+D</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_LineComment" Scope="Text Editor">Ctrl+/</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_BlockComment" Scope="Text Editor">Ctrl+Shift+/</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_CompleteCodeTypeName" Scope="Text Editor">Ctrl+Alt+Space</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_CompleteCodeSmart" Scope="Text Editor">Ctrl+Shift+Space</Shortcut>
-					<Shortcut Command="ReSharper.ReSharper_ParameterInfo_Show" Scope="Text Editor">Ctrl+P</Shortcut>
 					<Shortcut Command="ReSharper_ParameterInfo_GoToPreviousSignature" Scope="Text Editor">Ctrl+Shift+P</Shortcut>
 					<Shortcut Command="ReSharper_ParameterInfo_GoToPreviousSignature" Scope="Global">Ctrl+Shift+P</Shortcut>
-					<Shortcut Command="ReSharper.ReSharper_QuickDoc" Scope="Text Editor">Ctrl+Q</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_QuickDoc" Scope="Global">Ctrl+Q</Shortcut>
-					<Shortcut Command="ReSharper.ReSharper_GotoType" Scope="Text Editor">Ctrl+N</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoType" Scope="Global">Ctrl+N</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoFile" Scope="Text Editor">Ctrl+Shift+N</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoFile" Scope="Global">Ctrl+Shift+N</Shortcut>
@@ -1294,17 +1272,14 @@
 					<Shortcut Command="ReSharper.ReSharper_GotoFileMember" Scope="Global">Ctrl+F12</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoUsage" Scope="Text Editor">Ctrl+Alt+F7</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoUsage" Scope="Global">Ctrl+Alt+F7</Shortcut>
-					<Shortcut Command="ReSharper.ReSharper_GotoDeclaration" Scope="Text Editor">Ctrl+B</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoDeclaration" Scope="Global">Ctrl+B</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoImplementation" Scope="Text Editor">Ctrl+Shift+Alt+B</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoImplementation" Scope="Global">Ctrl+Shift+Alt+B</Shortcut>
-					<Shortcut Command="ReSharper.ReSharper_GotoBase" Scope="Text Editor">Ctrl+U</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoBase" Scope="Global">Ctrl+U</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoInheritors" Scope="Text Editor">Ctrl+Alt+B</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoInheritors" Scope="Global">Ctrl+Alt+B</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoTypeDeclaration" Scope="Text Editor">Ctrl+Shift+T</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoTypeDeclaration" Scope="Global">Ctrl+Shift+T</Shortcut>
-					<Shortcut Command="ReSharper.ReSharper_GotoContainingDeclaration" Scope="Text Editor">Ctrl+[</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoContainingDeclaration" Scope="Global">Ctrl+[</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_NavigateTo" Scope="Text Editor">Ctrl+Shift+G</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_NavigateTo" Scope="Global">Ctrl+Shift+G</Shortcut>
@@ -1380,7 +1355,6 @@
 					<Shortcut Command="ReSharper.ReSharper_Generate" Scope="Global">Alt+Ins</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_CleanupCode" Scope="Text Editor">Ctrl+Alt+F</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_CleanupCode" Scope="Global">Ctrl+Alt+F</Shortcut>
-					<Shortcut Command="ReSharper.ReSharper_GotoRecentFiles" Scope="Text Editor">Ctrl+E</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoRecentFiles" Scope="Global">Ctrl+E</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoRecentEdits" Scope="Text Editor">Ctrl+Shift+Alt+Bkspce</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoRecentEdits" Scope="Global">Ctrl+Shift+Alt+Bkspce</Shortcut>
@@ -1440,8 +1414,36 @@
 					<Shortcut Command="ReSharper_WindowManager_ActivateRecentTool" Scope="Global">Ctrl+Alt+Bkspce</Shortcut>
 					<Shortcut Command="ReSharper_EnableDaemon" Scope="Text Editor">Ctrl+Shift+Alt+8</Shortcut>
 					<Shortcut Command="ReSharper_EnableDaemon" Scope="Global">Ctrl+Shift+Alt+8</Shortcut>
-					<RemoveShortcut Command="Edit.Find" Scope="Global">Ctrl+F</RemoveShortcut>
 					<Shortcut Command="ProjectandSolutionContextMenus.Solution.VSCommands.ShowAllFiles" Scope="Global">Ctrl+F, Ctrl+F</Shortcut>
+					<RemoveShortcut Command="ReSharper.ReSharper_GotoRecentFiles" Scope="Text Editor">Ctrl+E</RemoveShortcut>
+					<RemoveShortcut Command="ReSharper.ReSharper_ParameterInfo_Show" Scope="Text Editor">Ctrl+P</RemoveShortcut>
+					<RemoveShortcut Command="ReSharper.ReSharper_ExtendSelection" Scope="Text Editor">Ctrl+W</RemoveShortcut>
+					<RemoveShortcut Command="ReSharper.ReSharper_DuplicateText" Scope="Text Editor">Ctrl+D</RemoveShortcut>
+					<RemoveShortcut Command="ReSharper.ReSharper_QuickDoc" Scope="Text Editor">Ctrl+Q</RemoveShortcut>
+					<RemoveShortcut Command="ReSharper.ReSharper_GotoType" Scope="Text Editor">Ctrl+N</RemoveShortcut>
+					<RemoveShortcut Command="ReSharper.ReSharper_GotoDeclaration" Scope="Text Editor">Ctrl+B</RemoveShortcut>
+					<RemoveShortcut Command="ReSharper.ReSharper_GotoBase" Scope="Text Editor">Ctrl+U</RemoveShortcut>
+					<RemoveShortcut Command="ReSharper.ReSharper_GotoContainingDeclaration" Scope="Text Editor">Ctrl+[</RemoveShortcut>
+					<Shortcut Command="ViEmu.KeypressCtrlB" Scope="Text Editor">Ctrl+B</Shortcut>
+					<Shortcut Command="ViEmu.KeypressCtrlC" Scope="Text Editor">Ctrl+C</Shortcut>
+					<Shortcut Command="ViEmu.KeypressCtrlD" Scope="Text Editor">Ctrl+D</Shortcut>
+					<Shortcut Command="ViEmu.KeypressCtrlE" Scope="Text Editor">Ctrl+E</Shortcut>
+					<Shortcut Command="ViEmu.KeypressCtrlF" Scope="Text Editor">Ctrl+F</Shortcut>
+					<Shortcut Command="ViEmu.KeypressCtrlI" Scope="Text Editor">Ctrl+I</Shortcut>
+					<Shortcut Command="ViEmu.KeypressCtrlN" Scope="Text Editor">Ctrl+N</Shortcut>
+					<Shortcut Command="ViEmu.KeypressCtrlO" Scope="Text Editor">Ctrl+O</Shortcut>
+					<Shortcut Command="ViEmu.KeypressCtrlP" Scope="Text Editor">Ctrl+P</Shortcut>
+					<Shortcut Command="ViEmu.KeypressCtrlQ" Scope="Text Editor">Ctrl+Q</Shortcut>
+					<Shortcut Command="ViEmu.KeypressCtrlR" Scope="Text Editor">Ctrl+R</Shortcut>
+					<Shortcut Command="ViEmu.KeypressCtrlT" Scope="Text Editor">Ctrl+T</Shortcut>
+					<Shortcut Command="ViEmu.KeypressCtrlU" Scope="Text Editor">Ctrl+U</Shortcut>
+					<Shortcut Command="ViEmu.KeypressCtrlV" Scope="Text Editor">Ctrl+V</Shortcut>
+					<Shortcut Command="ViEmu.KeypressCtrlW" Scope="Text Editor">Ctrl+W</Shortcut>
+					<Shortcut Command="ViEmu.KeypressCtrlY" Scope="Text Editor">Ctrl+Y</Shortcut>
+					<Shortcut Command="ViEmu.KeypressCtrlLeftSquareBracket" Scope="Text Editor">Ctrl+[</Shortcut>
+					<Shortcut Command="ViEmu.KeypressCtrlRightSquareBracket" Scope="Text Editor">Ctrl+]</Shortcut>
+					<Shortcut Command="TestDriven.NET.RunTests" Scope="Global">Ctrl+Shift+Alt+T</Shortcut>
+					<Shortcut Command="TestDriven.NET.RerunTests" Scope="Global">Ctrl+Shift+Alt+R</Shortcut>
 				</UserShortcuts>
 			</KeyboardShortcuts>
 		</Category>
@@ -1542,7 +1544,7 @@
 		</Category>
 		<Category name="Environment_SimplifiedToolsOptions" Category="{13BEDEE6-9051-4809-B9E3-2EEC749EB15A}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_SimplifiedToolsOptions" PackageName="Visual Studio Environment Package">
 			<PropertyValue name="SupportsSimpleToolsOptions">false</PropertyValue>
-			<PropertyValue name="ShowingAllPages">false</PropertyValue>
+			<PropertyValue name="ShowingAllPages">true</PropertyValue>
 			<PropertyValue name="ShowFlatList">false</PropertyValue>
 		</Category>
 		<Category name="Environment_StartPage" Category="{255FE6D3-A0AE-4076-A509-D581B2BE4F9E}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_StartPage" PackageName="Visual Studio Environment Package">
@@ -1591,7 +1593,7 @@
 					<Columns>
 						<Column Name="Priority" Width="20" Visibility="Visible" SortPriority="0" SortDirection="Up"/>
 						<Column Name="ProviderKnowsOrder" Width="19" Visibility="Invisible" SortPriority="2" SortDirection="Up"/>
-						<Column Name="Description" Width="690" Visibility="Visible" SortPriority="7" SortDirection="Up"/>
+						<Column Name="Description" Width="1197" Visibility="Visible" SortPriority="7" SortDirection="Up"/>
 						<Column Name="File" Width="120" Visibility="Visible" SortPriority="4" SortDirection="Up"/>
 						<Column Name="Line" Width="70" Visibility="Visible" SortPriority="5" SortDirection="Up"/>
 						<Column Name="Column" Width="70" Visibility="Invisible" SortPriority="6" SortDirection="Up"/>
@@ -1845,7 +1847,7 @@
 									<wm:ToolWindowView OnTopWhenLastInContext="False" ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="1" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}" DockedHeight="384" DockedWidth="1470.8" AutoHideWidth="934" FloatingHeight="384" FloatingWidth="204.8"/>
 								</AutoHideGroup>
 								<AutoHideGroup IsVisible="True">
-									<wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="2" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}" IsSelected="True" IsVisible="True" DockedHeight="350" DockedWidth="298" AutoHideWidth="525" FloatingTop="544" FloatingLeft="-2947" FloatingHeight="358" FloatingWidth="205"/>
+									<wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="2" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}" IsVisible="True" DockedHeight="350" DockedWidth="298" AutoHideWidth="525" FloatingTop="544" FloatingLeft="-2947" FloatingHeight="358" FloatingWidth="205"/>
 								</AutoHideGroup>
 							</AutoHideChannel>
 							<AutoHideChannel Dock="Top"/>
@@ -1854,11 +1856,11 @@
 									<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="15" IconResourceID="6650" IconResourcePackage="4a9b7e50-aa16-11d0-a8c5-00a0c921a4d2" Name="ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}" IsVisible="True" DockedHeight="192" DockedWidth="1024" AutoHideHeight="330" FloatingHeight="192" FloatingWidth="614.4"/>
 									<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="6" IconResourceID="6650" IconResourcePackage="4a9b7e50-aa16-11d0-a8c5-00a0c921a4d2" Name="ST:0:0:{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}" IsVisible="True" DockedHeight="192" DockedWidth="1024" FloatingHeight="192" FloatingWidth="614.4"/>
 									<wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="0" IconResourceID="301" IconResourcePackage="3f3d9528-bac4-420e-8147-29896300c5c0" Name="ST:0:0:{3822e751-eb69-4b0e-b301-595a9e4c74d5}" IsVisible="True" DockedHeight="192" DockedWidth="1024" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
-									<wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="0" IconResourceID="301" IconResourcePackage="5fcc8577-4feb-4d04-ad72-d6c629b083cc" Name="ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}" IsVisible="True" DockedHeight="192" DockedWidth="1024" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
+									<wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="0" IconResourceID="301" IconResourcePackage="5fcc8577-4feb-4d04-ad72-d6c629b083cc" Name="ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}" DockedHeight="192" DockedWidth="1024" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
 									<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="11" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{0f887920-c2b6-11d2-9375-0080c747d9a0}" IsVisible="True" DockedHeight="506" DockedWidth="1024" FloatingHeight="192" FloatingWidth="307.2"/>
 								</AutoHideGroup>
 								<AutoHideGroup IsVisible="True">
-									<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="3" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}" IsVisible="True" DockedHeight="332" DockedWidth="606" FloatingTop="612" FloatingLeft="404" FloatingHeight="192" FloatingWidth="614"/>
+									<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="3" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}" IsSelected="True" IsVisible="True" DockedHeight="332" DockedWidth="606" FloatingTop="612" FloatingLeft="404" FloatingHeight="192" FloatingWidth="614"/>
 								</AutoHideGroup>
 							</AutoHideChannel>
 							<DockRoot IsVisible="True" DockedHeight="*" DockedWidth="*">
@@ -1898,7 +1900,7 @@
 											<DockGroup Orientation="Vertical" IsVisible="True" DockedHeight="*" DockedWidth="*">
 												<DockGroup IsVisible="True" DockedHeight="*" DockedWidth="*">
 													<DockGroup Orientation="Vertical" IsVisible="True" DockedHeight="*" DockedWidth="*">
-														<DocumentGroupContainer Orientation="Vertical" IsVisible="True" DockedHeight="*" DockedWidth="*">
+														<DocumentGroupContainer IsVisible="True" DockedHeight="*" DockedWidth="*">
 															<DocumentGroup>
 																<wm:ToolWindowView ForceCreate="DontForceCreate" Name="ST:0:0:{387cb18d-6153-4156-9257-9ac3f9207bbe}" FloatingHeight="537.6" FloatingWidth="716.8"/>
 																<wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{c79b74ff-f1d7-4c94-aefa-4d22bfe1b1f9}" FloatingHeight="537.6" FloatingWidth="716.8"/>
