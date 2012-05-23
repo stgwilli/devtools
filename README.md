@@ -24,9 +24,9 @@ The repository consists of mainly the following:
   * Navigate to the folder you created above and make a clone of this repository (keep the devtools name). Feel free to fork the repository before you make a clone if you would like to send me pull requests.
   
 ##Once you have the folder cloned continue with the following readme's, specific to the environment you are using:
-  * [OSX](/setup_osx.md)
-  * [MSys On Windows](/setup_windows_msys.md)
-  * [Cygwin On Windows](/setup_windows_cygwin.md)
+  * [OSX](http://github.com/developwithpassion/devtools/setup_osx.md)
+  * [MSys On Windows](http://github.com/developwithpassion/devtools/setup_windows_msys.md)
+  * [Cygwin On Windows](http://github.com/developwithpassion/devtools/setup_windows_cygwin.md)
 
 ##Contributing
 
