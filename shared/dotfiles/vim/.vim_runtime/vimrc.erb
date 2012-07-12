@@ -248,6 +248,6 @@ autocmd BufReadPost *
 set listchars=tab:⇒\ ,eol:¬
 
 <% if configatron.core.is_windows %>
-let g:dbext_default_profile_daxko = 'type=SQLSRV:integratedlogin=1:dbname=daxko:host=localhost'
-let g:dbext_default_profile_qa = 'type=SQLSRV:dbname=ops1_12_6_qa:host=qa:user=sa:passwd=sa_Pa$$1'
+let g:dbext_default_profile_daxko_local_ops = 'type=SQLSRV:integratedlogin=1:dbname=ops:host=localhost'
+let g:dbext_default_profile_daxko_local_sso = 'type=SQLSRV:integratedlogin=1:dbname=sso:host=localhost'
 <% end %>
