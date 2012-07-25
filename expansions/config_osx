@@ -5,6 +5,7 @@ expand do
       :editor => 'mvim -v -f -c "au VimLeave * !open -a Terminal"',
       :is_windows => false,
       :is_cygwin => false,
+      :is_linux => false,
       :is_mingw => false,
       :is_osx => true,
       :vi => "'mvim -v'",

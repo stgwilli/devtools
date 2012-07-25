@@ -4,6 +4,7 @@ expand do
       :vim => "'start C:/utils/vim/vim73/gvim.exe'",
       :editor => 'vi',
       :is_windows => true,
+      :is_linux => false,
       :is_cygwin => false,
       :is_mingw => true,
       :is_osx => false,

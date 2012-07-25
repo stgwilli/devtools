@@ -4,6 +4,7 @@ expand do
       :editor => 'vi',
       :is_windows => false,
       :is_cygwin => false,
+      :is_linux => true,
       :is_mingw => false,
       :is_osx => false,
       :vi  => '/usr/local/bin/vim.exe',
