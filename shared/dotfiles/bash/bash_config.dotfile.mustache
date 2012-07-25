@@ -1,5 +1,7 @@
 #ignore case in file/folder names
+{{^ core.is_linux }}
 bind "set completion-ignore-case on"
+{{/core.is_linux }}
 #enable vim style command line behaviour
 set -o vi
 {{# core.is_mingw}}
