@@ -7,6 +7,7 @@ expand do
   platform = 'osx' if /dar/ =~ RUBY_PLATFORM 
   platform = 'mingw' if /ming/ =~ RUBY_PLATFORM 
   platform = 'cygwin' if /cyg/ =~ RUBY_PLATFORM 
+  platform = 'linux' if /linux/ =~ RUBY_PLATFORM 
 
   configs = {
     :core => 
