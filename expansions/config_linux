@@ -7,7 +7,7 @@ expand do
       :is_linux => true,
       :is_mingw => false,
       :is_osx => false,
-      :vi  => '/usr/local/bin/vim.exe',
+      :vi  => 'vim',
       :vim => 'vim',
       :term => 'linux'
     },
