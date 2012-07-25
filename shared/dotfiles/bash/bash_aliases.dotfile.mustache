@@ -47,10 +47,10 @@ alias change_hosts='devtools;vi shared/hosts/hosts.mustache'
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 
-    {{^core.is_osx }}
+    {{^ core.is_osx }}
     alias ls='ls --color=auto'
     {{/core.is_osx }}
-    {{core.is_osx}}
+    {{# core.is_osx }}
     alias ls='gls --color=auto'
     {{/core.is_osx }}
     alias grep='grep --color=auto'
