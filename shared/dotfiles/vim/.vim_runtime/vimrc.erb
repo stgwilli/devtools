@@ -247,7 +247,12 @@ autocmd BufReadPost *
 "set the characters used to display tabs and spaces
 set listchars=tab:⇒\ ,eol:¬
 
+" Change global directory to the current directory of the current buffer
+map <leader>cd :cd %:p:h<CR>
+
 <% if configatron.core.is_windows %>
+let g:dbext_default_profile_daxko_local = 'type=SQLSRV:integratedlogin=1:dbname=master:host=localhost'
 let g:dbext_default_profile_daxko_local_ops = 'type=SQLSRV:integratedlogin=1:dbname=ops:host=localhost'
 let g:dbext_default_profile_daxko_local_sso = 'type=SQLSRV:integratedlogin=1:dbname=sso:host=localhost'
+let g:dbext_default_profile_daxko_qa_128 = 'type=SQLSRV:integratedlogin=1:dbname=ops:host=10.4.0.10'
 <% end %>
