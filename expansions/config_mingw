@@ -13,8 +13,8 @@ expand do
     },
     :git => {
       :autocrlf => 'true',
-      :merge_tool => 'bc3',
-      :diff_tool => 'bc3',
+      :merge_tool => 'gvimdiff', #bc3 for beyond compare
+      :diff_tool => 'gvimdiff',  #bc3 for beyond compare
       :editor => 'C:/utils/vim/vim73/vim.exe',
     },
     :vim => {

@@ -30,7 +30,8 @@ configs = {
         {
           :mingw => '/c/utils/mingw',
           :vim => '/c/utils/vim/vim73',
-          :devenv => '/c/utils/vs2010/Common7/IDE/devenv.exe'
+          :devenv => '/c/utils/vs2010/Common7/IDE/devenv.exe',
+          :beyond_compare3 => '/C/utils/beyond_compare_3/BComp.exe',
         }
      }
     },
