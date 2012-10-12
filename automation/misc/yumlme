@@ -17,6 +17,8 @@ end
 
 diagrams = Dir.glob("**/*.yuml")
 
+exit if (diagrams.count == 0)
+
 if (diagrams.count == 1) 
   draw(diagrams[0])
   exit
