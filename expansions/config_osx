@@ -2,7 +2,7 @@ expand do
   configatron.configure_from_hash :core =>{
       :launcher => '',
       :vim => 'mvim',
-      :editor => 'mvim -v -f -c "au VimLeave * !open -a Terminal"',
+      :editor => 'mvim -v -f',
       :is_windows => false,
       :is_cygwin => false,
       :is_linux => false,
