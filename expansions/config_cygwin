@@ -3,11 +3,13 @@ expand do
       :launcher => 'cygstart',
       :editor => 'vi',
       :is_windows => true,
+      :is_linux => false,
       :is_cygwin => true,
       :is_mingw => false,
       :is_osx => false,
       :vi  => '/usr/local/bin/vim.exe',
-      :vim => 'vim'
+      :vim => 'vim',
+      :term => 'linux'
     },
     :git => {
       :autocrlf => 'input',

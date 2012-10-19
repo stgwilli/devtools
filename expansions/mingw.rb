@@ -1,7 +1,7 @@
 expand do
   load %w[expansions cygwin.rb].as_glob_pattern
 
-  copy_to [configatron.my.windows.paths.unix_style.mingw,%w[msys 1.0 etc]].as_glob_pattern do
+  copy_to [configatron.my.windows.paths.unix_style.mingw,%w[msys 1.0]].as_glob_pattern do
     contents %w[windows mingw].as_glob_pattern
   end
 

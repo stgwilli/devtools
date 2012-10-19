@@ -41,11 +41,19 @@ return
 
 ;launch the mingw shell
 ming:
-run_regular_program(mingw)
+run_start_menu_program(mingw)
 return
 
 lm:
 Click
+return
+
+lw:
+RegWrite, REG_DWORD, HKEY_CURRENT_USER, Software\Microsoft\Windows\CurrentVersion\Policies\System, DisableLockWorkstation, 0
+return
+
+ulw:
+RegWrite, REG_DWORD, HKEY_CURRENT_USER, Software\Microsoft\Windows\CurrentVersion\Policies\System, DisableLockWorkstation, 1
 return
 
 clm:

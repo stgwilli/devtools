@@ -1,23 +1,23 @@
 expand do
   configatron.configure_from_hash :core =>{
-      :launcher => '',
-      :vim => 'mvim',
-      :editor => 'mvim -v -f',
+      :launcher => 'start',
+      :editor => 'vi',
       :is_windows => false,
       :is_cygwin => false,
-      :is_linux => false,
+      :is_linux => true,
       :is_mingw => false,
-      :is_osx => true,
-      :vi => "'mvim -v'",
-      :term => 'xterm-color'
+      :is_osx => false,
+      :vi  => 'vim',
+      :vim => 'vim',
+      :term => 'linux'
     },
     :git => {
       :autocrlf => 'input',
       :merge_tool => 'vimdiff',
       :diff_tool => 'vimdiff',
-      :editor => 'vi'
+      :editor => 'vi',
     },
     :vim => {
-      :environment => 'mac'
+      :environment => 'linux'
     }
 end

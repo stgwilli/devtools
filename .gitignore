@@ -1,3 +1,4 @@
+_Re[sS]harper*
 *.BACKUP*
 *.BASE*
 *.LOCAL*
@@ -22,6 +23,7 @@ shared/dotfiles/vim/.vimrc
 shared/dotfiles/vim/.vim_runtime/vimrc
 shared/dotfiles/vim/.vim_runtime/wordlist.vim
 shared/dotfiles/vim/vimrc.dotfile.erb
+shared/dotfiles/zsh/.zshrc
 shared/dotfiles/pentadactyl/.pentadactylrc
 .vikingrc
 shared/hosts/hosts

@@ -1,0 +1,38 @@
+#!/usr/bin/env ruby
+
+def draw(diagram)
+  url = "http://yuml.me/diagram/scruffy;/class/#{read_yuml_file(diagram)}.svg"
+  system("open '#{url}'")
+end
+
+def read_yuml_file(file_name)
+  contents = []
+  File.open(file_name,'r') do|file|
+    file.each do|line|
+      contents.push line
+    end
+  end
+  contents.join(',')
+end
+
+diagrams = Dir.glob("**/*.yuml")
+
+exit if (diagrams.count == 0)
+
+if (diagrams.count == 1) 
+  draw(diagrams[0])
+  exit
+end
+
+diagrams.each_with_index do |diagram,index|
+  puts "#{index+1} - #{File.basename(diagram)} - (#{diagram})"
+end
+puts "\r\nPick a diagram"
+
+index = readline.chomp
+draw(diagrams[index.to_i - 1]) if index
+
+
+
+
+

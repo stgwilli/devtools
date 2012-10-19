@@ -26,9 +26,9 @@ alias prompt='cyg-wrapper cmd.exe --cyg-env-convert=APPDATA,LOCALAPPDATA,Program
 alias psh='cyg-wrapper powershell --cyg-env-convert=APPDATA,LOCALAPPDATA,ProgramData,ALLUSERSPROFILE,WINDIR --fork=2'
 alias open='cygstart'
 
-function vim()
+function gvim()
 {
-  cyg-wrapper gvim --fork=1 $1
+  cyg-wrapper {{{my.windows.paths.unix_style.vim}}}/gvim.exe --fork=1 $*
 }
 {{/core.is_cygwin }}
 
@@ -42,17 +42,17 @@ alias rm='rm -fr $*'
 alias qtar='tar -xzvf $*'
 
 #editing command aliases
-alias change_hosts='devtools;vi shared/hosts/hosts.erb'
+alias change_hosts='devtools;vi shared/hosts/hosts.mustache'
 
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 
-    {{#  core.is_windows }}
+    {{^ core.is_osx }}
     alias ls='ls --color=auto'
-    {{/core.is_windows }}
-    {{^core.is_windows}}
+    {{/core.is_osx }}
+    {{# core.is_osx }}
     alias ls='gls --color=auto'
-    {{/core.is_windows }}
+    {{/core.is_osx }}
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
@@ -107,13 +107,19 @@ alias prep='cd ~/repositories/github/dwp/prep'
 alias app='cd ~/repositories/github/dwp/app'
 alias ops='cd /c/Repos/operations/'
 {{/core.is_windows }}
-alias daxko='cd ~/repositories/daxko'
 alias developwithpassion='cd ~/repositories/developwithpassion'
 alias myssh='cd ~/repositories/developwithpassion/ssh'
 alias github='cd ~/repositories/github'
 alias devtools='cd {{{core.devtools_root}}}'
 alias blog='cd ~/repositories/developwithpassion/blog.developwithpassion.com'
-alias opsapi='cd ~/repositories/daxko/operations_api'
+
+{{^ core.is_cygwin }}
+alias daxko='cd ~/repositories/daxko'
+{{/core.is_cygwin }}
+{{# core.is_cygwin}}
+alias daxko='cd /c/users/jp/repositories/daxko'
+alias ~~='cd /c/users/jp'
+{{/core.is_cygwin }}
 
 #file alises
 alias licenses='vi ~/repositories/developwithpassion/developwithpassion.com/licenses/licenses.markdown'
