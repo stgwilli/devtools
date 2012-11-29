@@ -1,11 +1,15 @@
 {{# core.is_windows }}
 #localhost
-127.0.0.1       .psf
+127.0.0.1 localhost
+127.0.0.1	ops.local
+127.0.0.1	dev.ops.local
+127.0.0.1 dev2.ops.local
+#127.0.0.1       .psf
 #github.com
 207.97.227.239 github.com
 {{/core.is_windows }}
+
 {{^core.is_windows }}
-127.0.0.1	localhost
 255.255.255.255	broadcasthost
 ::1             localhost 
 fe80::1%lo0	localhost
