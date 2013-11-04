@@ -2,10 +2,11 @@
 require 'fileutils'
 require 'open-uri'
 
+@msbuild = File.join(%w[C: Windows Microsoft.NET Framework64 v4.0.30319 msbuild.exe])
 
 @bundles = {
  :scrooloose => %w[syntastic nerdtree],
- :tpope => %w[vim-cucumber vim-fugitive vim-git vim-haml vim-markdown vim-rails vim-surround vim-vividchalk vim-endwise],
+ :tpope => %w[vim-cucumber vim-fugitive vim-git vim-haml vim-markdown vim-rails vim-surround vim-vividchalk vim-endwise vim-dispatch],
  :msanders => %w[snipmate.vim],
  :sukima => %w[xmledit],
  :timcharper => %w[textile.vim],
@@ -13,16 +14,20 @@ require 'open-uri'
  :tomtom => %w[tcomment_vim],
  :kien => %w[ctrlp.vim],
  "vim-ruby" => %w[vim-ruby],
- :developwithpassion => %w[twitvim],
+ #:developwithpassion => %w[twitvim],
  :kchmck => %w[vim-coffee-script],
  :altercation => %w[vim-colors-solarized],
  :ecomba => %w[vim-ruby-refactoring],
  :benmills => %w[vimux],
  :kana => %w[vim-fakeclip],
- :PProvost => %w[vim-ps1]
+ :PProvost => %w[vim-ps1],
+ :nosami => %w[Omnisharp],
+ :Shougo => %w[neocomplcache.vim],
 }
 
-
+@post_bundle_actions = {
+  :Omnisharp => lambda { |dir| Dir.chdir(File.join(dir,"server")) { `#{@msbuild} /p:Platform="Any CPU"` } }
+}
 
 @vim_org_scripts = [
   ["IndexedSearch", "7062",  "plugin"],
@@ -40,7 +45,7 @@ require 'open-uri'
 
 @bundles.each do|git_user,repos|
   repos.each do|repo_name|
-    @git_bundles << "git://github.com/#{git_user}/#{repo_name}.git"
+    @git_bundles << "https://github.com/#{git_user}/#{repo_name}.git"
   end
 end
 
@@ -65,7 +70,8 @@ def unpack_bundles
   @git_bundles.each do |url|
     dir = url.split('/').last.sub(/\.git$/, '')
     puts "  Unpacking #{url} into #{dir}"
-    `git clone #{url} #{dir}`
+    `git clone --recursive #{url} #{dir}`
+    @post_bundle_actions.fetch(dir.to_sym).call(dir) if @post_bundle_actions.has_key?(dir.to_sym)
     `rm -rf #{File.join(dir, ".git")}`
   end
 end

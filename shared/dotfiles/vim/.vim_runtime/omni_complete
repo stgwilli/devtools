@@ -1,0 +1,121 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Omnisharp
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" OmniSharp won't work without this setting
+filetype plugin on
+
+"This is the default value, setting it isn't actually necessary
+let g:OmniSharp_host = "http://localhost:2000"
+
+"Set the type lookup function to use the preview window instead of the status line
+let g:OmniSharp_typeLookupInPreview = 1
+
+"Showmatch significantly slows down omnicomplete
+"when the first match contains parentheses.
+set noshowmatch
+
+"Super tab settings
+"let g:SuperTabDefaultCompletionType = 'context'
+"let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
+"let g:SuperTabDefaultCompletionTypeDiscovery = ["&omnifunc:<c-x><c-o>","&completefunc:<c-x><c-n>"]
+"let g:SuperTabClosePreviewOnPopupClose = 1
+
+"don't autoselect first item in omnicomplete, show if only one item (for preview)
+set completeopt=longest,menuone,preview
+
+nnoremap <F5> :wa!<cr>:OmniSharpBuild<cr>
+" Builds can run asynchronously with vim-dispatch installed
+"nnoremap <F5> :wa!<cr>:OmniSharpBuildAsync<cr>
+
+nnoremap <F12> :OmniSharpGotoDefinition<cr>
+nnoremap gd :OmniSharpGotoDefinition<cr>
+nnoremap fi :OmniSharpFindImplementations<cr>
+nnoremap fu :OmniSharpFindUsages<cr>
+nnoremap <leader>tt :OmniSharpTypeLookup<cr>
+"I find contextual code actions so useful that I have it mapped to the spacebar
+nnoremap <space> :OmniSharpGetCodeActions<cr>
+
+" rename with dialog
+nnoremap nm :OmniSharpRename<cr>
+nnoremap <F2> :OmniSharpRename<cr>      
+" rename without dialog - with cursor on the symbol to rename... ':Rename newname'
+command! -nargs=1 Rename :call OmniSharp#RenameTo("<args>")
+" Force OmniSharp to reload the solution. Useful when switching branches etc.
+nnoremap <leader>rl :OmniSharpReloadSolution<cr>
+nnoremap <leader>cf :OmniSharpCodeFormat<cr>
+nnoremap <leader>tp :OmniSharpAddToProject<cr>
+" (Experimental - uses vim-dispatch or vimproc plugin) - Start the omnisharp server for the current solution
+nnoremap <leader>ss :OmniSharpStartServer<cr>
+nnoremap <leader>sp :OmniSharpStopServer<cr>
+nnoremap <leader>th :OmniSharpHighlightTypes<cr>
+"Don't ask to save when changing buffers (i.e. when jumping to a type definition)
+set hidden
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => NeoComplCache
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:neocomplcache_enable_at_startup = 1
+" Use smartcase.
+let g:neocomplcache_enable_smart_case = 1
+" Use camel case completion.
+let g:neocomplcache_enable_camel_case_completion = 1
+" Use underscore completion.
+let g:neocomplcache_enable_underbar_completion = 1
+" Sets minimum char length of syntax keyword.
+let g:neocomplcache_min_syntax_length = 0
+" buffer file name pattern that locks neocomplcache. e.g. ku.vim or fuzzyfinder 
+"let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+
+let g:neocomplcache_enable_auto_close_preview = 0
+" Define keyword, for minor languages
+if !exists('g:neocomplcache_keyword_patterns')
+  let g:neocomplcache_keyword_patterns = {}
+endif
+let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
+
+" Plugin key-mappings.
+inoremap <expr><C-g>     neocomplcache#undo_completion()
+inoremap <expr><C-l>     neocomplcache#complete_common_string()
+
+" SuperTab like snippets behavior.
+"imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" Recommended key-mappings.
+" <CR>: close popup and save indent.
+" inoremap <expr><CR> pumvisible() ? neocomplcache#close_popup() : "\<CR>"
+inoremap <expr>.  neocomplcache#close_popup() . "."
+inoremap <expr>(  neocomplcache#close_popup() . "("
+inoremap <expr>)  neocomplcache#close_popup() . ")"
+inoremap <expr><space>  neocomplcache#close_popup() . " "
+inoremap <expr>;  neocomplcache#close_popup() . ";"
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? neocomplcache#close_popup() : "\<TAB>"
+" <C-h>, <BS>: close popup and delete backword char.
+inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><C-y>  neocomplcache#close_popup()
+inoremap <expr><C-e>  neocomplcache#cancel_popup()
+inoremap <expr><ESC> pumvisible() ? neocomplcache#cancel_popup() : "\<esc>"
+
+" AutoComplPop like behavior.
+let g:neocomplcache_enable_auto_select = 1
+
+" Shell like behavior(not recommended).
+set completeopt+=longest
+"let g:neocomplcache_disable_auto_complete = 1
+"inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<TAB>"
+"inoremap <expr><CR>  neocomplcache#smart_close_popup() . "\<CR>"
+
+
+" Enable heavy omni completion, which require computational power and may stall the vim. 
+if !exists('g:neocomplcache_omni_patterns')
+  let g:neocomplcache_omni_patterns = {}
+endif
+let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
+let g:neocomplcache_omni_patterns.cs = '.*'
+"autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
+let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
+

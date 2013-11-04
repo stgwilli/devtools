@@ -99,6 +99,7 @@ map <leader>s? z=
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let NERDTreeChDirMode=2
 nnoremap <leader>n :NERDTree .<CR>
+nnoremap <leader>m :NERDTreeFind .<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -126,7 +127,7 @@ map <leader>rs :InterruptVimTmuxRunner<CR>
 " => MISC
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remove the Windows ^M - when the encodings gets messed up
-noremap <leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+noremap <leader>M mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 "Quickly open a buffer for scripbble
 map <leader>q :e ~/buffer<cr>
