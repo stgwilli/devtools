@@ -2,6 +2,15 @@ reload_window_title = Project file modification detected
 
 ;===========================
 ;bring up the VS# context actions
+;
+;
+; aep - Add existing project
+; el - error list
+; ani - add new item
+; drun - run with debugger
+; rwd - run without debugger 
+; fac - fonts and colors dialog
+; 
 actions="aep,el,ani,drun,rwd,fac,fl,h,imp,key,l,anp,nu,par,rr,ru,s,o,vi,w,pairv,pairr,rel,rb,vv,vh"
 LWIN & o::
 Input,command_input,T1/1,{enter}{esc}{tab},%actions%

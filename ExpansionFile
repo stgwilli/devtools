@@ -9,6 +9,7 @@ expand do
   platform = 'cygwin' if /cyg/ =~ RUBY_PLATFORM 
   platform = 'linux' if /linux/ =~ RUBY_PLATFORM 
 
+  log "The current platform is #{platform}"
   configs = {
     :core => 
     { 

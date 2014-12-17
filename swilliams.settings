@@ -20,7 +20,10 @@ configatron.configure_from_hash :my =>
       :unix_style =>
       {
         :mingw => '/c/utils/mingw',
-        :vim => '/c/utils/vim/vim73'
+        :msys => '/c/utils/mingw/msys/1.0/msys.bat',
+        :vim => '/c/utils/vim/vim73',
+        :sublime => '/c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe',
+        :beyond_compare3 => 'BCompare.exe'
       }
    }
   },

@@ -22,5 +22,7 @@ echo "$beyondcompare" /lefttitle=Remote /righttitle=Local /centertitle=Base "$lo
 {{/core.is_cygwin }}
 
 {{# core.is_mingw }}
+echo "Mingw launch beyond compare"
+echo "$beyondcompare" "$remotewinpath" "$localwinpath" "$basewinpath" "$mergedwinpath"
 "$beyondcompare" "$remotewinpath" "$localwinpath" "$basewinpath" "$mergedwinpath"
 {{/core.is_mingw }}

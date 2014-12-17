@@ -33,10 +33,11 @@ function gvim()
 {{/core.is_cygwin }}
 
 {{# core.is_mingw }}
-alias shell='start {{{my.windows.paths.unix_style.mingw_path}}}/msys/1.0/msys.bat'
+alias shell='start {{{my.windows.paths.unix_style.msys}}}'
 alias psh='start powershell'
 alias be='bundle exec'
 alias ber='bundle exec rake'
+alias subl='{{{my.windows.paths.unix_style.sublime}}}'
 {{/core.is_mingw }}
 
 alias ..='cd ..'
@@ -112,12 +113,12 @@ alias developwithpassion='cd ~/repositories/developwithpassion'
 alias myssh='cd ~/repositories/developwithpassion/ssh'
 alias github='cd ~/repositories/github'
 alias devtools='cd {{{core.devtools_root}}}'
-alias ops='cd /c/repositories/operations'
+alias ops='cd /c/repositories/ops'
 alias repos='cd /c/repositories/'
 alias firestorm='cd /c/repositories/firestorm'
-alias blog='cd ~/repositories/developwithpassion/blog.developwithpassion.com'
 alias git-extras='cd /c/repositories/git-extras'
 alias new-solution='cp /c/Users/swilliams/solution.sln ./'
+alias dxp='cd /c/repositories/dxp-deployer'
 
 {{^ core.is_cygwin }}
 alias daxko='cd ~/repositories/daxko'
