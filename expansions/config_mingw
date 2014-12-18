@@ -1,21 +1,21 @@
 expand do
   configatron.configure_from_hash :core =>{
       :launcher => '',
-      :vim => "'start /c/utils/vim/vim73/gvim.exe'",
+      :vim => "'start /c/utils/vim/vim74/gvim.exe'",
       :editor => 'vi',
       :is_windows => true,
       :is_linux => false,
       :is_cygwin => false,
       :is_mingw => true,
       :is_osx => false,
-      :vi => "/c/utils/vim/vim73/vim.exe",
+      :vi => "/c/utils/vim/vim74/vim.exe",
       :term => 'msys'
     },
     :git => {
       :autocrlf => 'true',
       :merge_tool => 'bc3', #bc3 for beyond compare
       :diff_tool => 'bc3',  #bc3 for beyond compare
-      :editor => 'C:/utils/vim/vim73/vim.exe',
+      :editor => 'C:/utils/vim/vim74/vim.exe',
     },
     :vim => {
       :environment => 'windows'

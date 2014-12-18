@@ -12,17 +12,15 @@ configatron.configure_from_hash :my =>
       {
         :ahk_spy => 'C:\utils\autohotkey\AU3_Spy.exe',
         :process_explorer => 'C:\utils\sysinternals\procexp.exe',
-        :divvy => 'C:\utils\divvy\Divvy.exe',
-        :camrec => 'C:\utils\camtasia_studio\CamRecorder.exe',
-        :msys => 'C:\utils\mingw\msys\1.0\msys.bat',
-        :ahk_scripts => 'C:\utils\cygwin\home\swilliams\repositories\developwithpassion\devtools\windows\autohotkey\ahk*.ahk',
+        :msys => 'C:\mingw\msys\1.0\msys.bat',
+        :ahk_scripts => 'C:\MinGW\msys\1.0\home\swilliams\repositories\developwithpassion\devtools\windows\autohotkey\ahk*.ahk',
       },
       :unix_style =>
       {
-        :mingw => '/c/utils/mingw',
-        :msys => '/c/utils/mingw/msys/1.0/msys.bat',
-        :vim => '/c/utils/vim/vim73',
-        :sublime => '/c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe',
+        :mingw => '/c/mingw',
+        :msys => '/c/mingw/msys/1.0/msys.bat',
+        :vim => '/c/utils/vim/vim74',
+        :sublime => '/c/utils/sublime_text_3/sublime_text.exe',
         :beyond_compare3 => 'BCompare.exe'
       }
    }
